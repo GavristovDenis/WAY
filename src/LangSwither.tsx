@@ -9,7 +9,7 @@ export const LangSwither = () => {
   const toggle = (lang: Lang) => i18n.changeLanguage(lang);
   useEffect(() => {
     setTimeout(() => {
-      setState(true);
+      setState(false);
     }, 2000);
   });
   if (state) {
