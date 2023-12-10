@@ -92,13 +92,14 @@ body {
 
 .SwiperSlide {
   img {
-    max-height: 800px;
+    max-width: 800px;
+    height: 800px;
   }
 }
 
 .SwiperSlideCity {
   position: relative;
-  bottom: 50vh;
+  bottom: 60vh;
 }
 .SwiperSlideCityLink {
   color: #fff;
