@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: 8rem;
   .appWrapper {
     width: 100%;
@@ -74,8 +75,8 @@ body {
   }
 }
 .swiper {
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -89,13 +90,20 @@ body {
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .SwiperSlide {
-  width: 100%;
-  background-color: red;
+  img {
+    max-width: 600px;
+    max-height: 500px;
+  }
+}
+
+.SwiperSlideCity {
+  position: relative;
+  bottom: 50vh;
+}
+.SwiperSlideCityLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
 }
