@@ -31,7 +31,7 @@ export const Slider = () => {
               <img alt="" src={img} />
               <div className="SwiperSlideCity">
                 <Link className="SwiperSlideCityLink" to={`/${id}`}>
-                  dddddddddddddddd
+                  {city}
                 </Link>
               </div>
             </SwiperSlide>
