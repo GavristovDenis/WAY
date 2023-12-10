@@ -93,7 +93,7 @@ body {
 .SwiperSlide {
   img {
     width: 450px;
-    height: 860px;
+    height: var(--tg-viewport-height);
   }
 }
 
