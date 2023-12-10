@@ -1,24 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 type Lang = "ru" | "en";
 
 export const LangSwither = () => {
   const { i18n } = useTranslation();
-
+  const [state, setState] = useState(true);
   const toggle = (lang: Lang) => i18n.changeLanguage(lang);
+  useEffect(() => {
+    setTimeout(() => {
+      setState(false);
+    }, 2000);
+  });
+  if (state) {
+    return (
+      <div className="App">
+        <p className="welcome">WELCOME WELCOME WELCOME</p>
+        <div className="appWrapper">
+          <div className="wayWrapper">
+            <div className="way">WAY</div>
+          </div>
+        </div>
 
+        <p className="welcome reverse">WELCOME WELCOME WELCOME</p>
+      </div>
+    );
+  }
   return (
     <div className="App">
-      <div onClick={() => toggle("ru")}>
-        <Link className="link" to="/main">
-          Русский
-        </Link>
-      </div>
-      <div onClick={() => toggle("en")}>
-        <Link className="link" to="/main">
-          English
-        </Link>
+      <div className="appWrapper">
+        <div className="langButton" onClick={() => toggle("ru")}>
+          <Link className="link" to="/main">
+            Русский
+          </Link>
+        </div>
+        <div className="langButton" onClick={() => toggle("en")}>
+          <Link className="link" to="/main">
+            English
+          </Link>
+        </div>
       </div>
     </div>
   );
