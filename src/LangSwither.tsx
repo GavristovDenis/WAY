@@ -15,14 +15,12 @@ export const LangSwither = () => {
   if (state) {
     return (
       <div className="App">
-        <p className="welcome">WELCOME WELCOME WELCOME</p>
-        <div className="appWrapper">
-          <div className="wayWrapper">
-            <div className="way">WAY</div>
-          </div>
+        <p className="welcome">WELCOME</p>
+        <div className="wayWrapper">
+          <div className="way">WAY</div>
         </div>
 
-        <p className="welcome reverse">WELCOME WELCOME WELCOME</p>
+        <p className="welcome reverse">WELCOME</p>
       </div>
     );
   }
