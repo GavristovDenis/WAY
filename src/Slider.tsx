@@ -24,7 +24,7 @@ export const Slider = () => {
   ];
   return (
     <>
-      <Swiper className="mySwiper">
+      <Swiper loop={true} className="mySwiper">
         {state.map(({ id, city, img }) => {
           return (
             <SwiperSlide className="SwiperSlide" key={id}>
