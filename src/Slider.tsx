@@ -48,7 +48,7 @@ export const Slider = () => {
   return (
     <>
       <Swiper loop={true} className="mySwiper">
-        {state.map(({ id, city, img }) => {
+        {state.map(({ id, city, img, description }) => {
           return (
             <SwiperSlide className="SwiperSlide" key={id}>
               <img alt="" src={img} />
@@ -56,6 +56,7 @@ export const Slider = () => {
                 <Link className="SwiperSlideCityLink" to={`/${id}`}>
                   {city}
                 </Link>
+                <div>{description}</div>
               </div>
             </SwiperSlide>
           );
