@@ -7,12 +7,12 @@ interface CityType {
   description: string;
 }
 interface BearState {
-  bears: CityType[];
+  city: CityType[];
   increase: (by: number) => void;
 }
 
 export const useCityStore = create<BearState>()((set) => ({
-  bears: [
+  city: [
     {
       id: 1,
       city: t("Moscow"),
@@ -44,5 +44,5 @@ export const useCityStore = create<BearState>()((set) => ({
       description: t("Crimea_description"),
     },
   ],
-  increase: (by) => set((state) => ({ bears: state.bears })),
+  increase: (by) => set((state) => ({ city: state.city })),
 }));

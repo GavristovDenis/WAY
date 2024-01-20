@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useCityStore } from "./store";
 
 export const Slider = () => {
-  const state = useCityStore((state) => state.bears);
+  const state = useCityStore((state) => state.city);
   return (
     <>
       <Swiper loop={true} className="mySwiper">
