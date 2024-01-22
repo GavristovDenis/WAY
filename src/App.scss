@@ -109,6 +109,7 @@ body {
   font-weight: 600;
 }
 .background10 {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  background-image: url(http://glebkema.ru/images/2015_09_20_iphone_155_x400.jpg),
+    linear-gradient(90deg, #666 10%, transparent 10%);
+  background-blend-mode: luminosity;
 }
