@@ -109,6 +109,5 @@ body {
   font-weight: 600;
 }
 .background10 {
-  background-image: #666, linear-gradient(90deg, #666 50%, transparent 50%);
-  background-blend-mode: luminosity;
+  filter: grayscale(50%);
 }
