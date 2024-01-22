@@ -3,8 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from "react-router-dom";
 import { useCityStore } from "./store";
+import { useTranslation } from "react-i18next";
 
 export const Slider = () => {
+  const { t } = useTranslation();
   const state = useCityStore((state) => state.city);
   return (
     <>
@@ -15,7 +17,7 @@ export const Slider = () => {
               <img alt="" src={img} />
               <div className="SwiperSlideCity">
                 <Link className="SwiperSlideCityLink" to={`/${id}`}>
-                  {city}
+                  {t(city)}
                 </Link>
               </div>
             </SwiperSlide>
