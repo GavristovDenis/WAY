@@ -16,6 +16,7 @@ export const CityPage = () => {
         <Link to={"/main"}>back</Link>
       </div>
       {t(filteredItems[0].city)}
+      {t(filteredItems[0].description)}
     </div>
   );
 };
