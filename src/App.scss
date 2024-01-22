@@ -109,7 +109,6 @@ body {
   font-weight: 600;
 }
 .background10 {
-  background-image: url(http://glebkema.ru/images/2015_09_20_iphone_155_x400.jpg),
-    linear-gradient(90deg, #666 10%, transparent 10%);
+  background-image: #666, linear-gradient(90deg, #666 50%, transparent 50%);
   background-blend-mode: luminosity;
 }
