@@ -1,13 +1,12 @@
 import { useCityStore } from "./store";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { filteredCity } from "./utils";
 
 export const Itinerary = () => {
   const { id } = useParams();
-  const state = useCityStore((state) => state.city);
+  const cities = useCityStore((state) => state.city);
 
-  const filteredItems = state.filter((city) =>
-    city.id.toString().includes(String(id))
-  )[0];
+  const filteredItems = filteredCity(cities, id);
   return (
     <div>
       {filteredItems.itinerary.map((route) => {
@@ -15,7 +14,9 @@ export const Itinerary = () => {
           <div>
             {route.title}
             <br />
-            {route.id}
+            <img style={{ width: 100 }} alt={route.img} src={route.img} />
+            {route.description}
+            <Link to={`/itinerary/${id}/${route.id}`}>Перейти</Link>
           </div>
         );
       })}

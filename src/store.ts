@@ -1,26 +1,12 @@
 import { create } from "zustand";
-interface Itinerary {
-  id: number;
-  title: string;
-  img: string;
-  description: string;
-  progress: number;
-}
+import { CityType } from "./types";
 
-interface CityType {
-  id: number;
-  city: string;
-  img: string;
-  description: string;
-  progress: number;
-  itinerary: Itinerary[];
-}
-interface BearState {
+interface CityState {
   city: CityType[];
   increase: (by: number) => void;
 }
 
-export const useCityStore = create<BearState>()((set) => ({
+export const useCityStore = create<CityState>()((set) => ({
   city: [
     {
       id: 1,
@@ -30,14 +16,14 @@ export const useCityStore = create<BearState>()((set) => ({
       progress: 100,
       itinerary: [
         {
-          id: 1,
+          id: 11,
           title: "Moscow_city",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Moscow_city_description",
           progress: 100,
         },
         {
-          id: 2,
+          id: 12,
           title: "Moscow_city2",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Moscow_city_description2",
@@ -53,7 +39,7 @@ export const useCityStore = create<BearState>()((set) => ({
       progress: 50,
       itinerary: [
         {
-          id: 1,
+          id: 21,
           title: "Samara_start",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Samara_city_description",
@@ -69,7 +55,7 @@ export const useCityStore = create<BearState>()((set) => ({
       progress: 0,
       itinerary: [
         {
-          id: 1,
+          id: 31,
           title: "Saint_Petersburg_start",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Saint_Petersburg_city_description",
@@ -85,7 +71,7 @@ export const useCityStore = create<BearState>()((set) => ({
       progress: 0,
       itinerary: [
         {
-          id: 1,
+          id: 41,
           title: "Vladivostok_start",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Vladivostok_city_description",
@@ -101,7 +87,7 @@ export const useCityStore = create<BearState>()((set) => ({
       progress: 0,
       itinerary: [
         {
-          id: 1,
+          id: 51,
           title: "Crimea_start",
           img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
           description: "Crimea_city_description",

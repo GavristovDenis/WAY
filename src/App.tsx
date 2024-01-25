@@ -5,6 +5,7 @@ import { LangSwither } from "./LangSwither";
 import { Slider } from "./Slider";
 import { CityPage } from "./CityPage";
 import { Itinerary } from "./Itinerary";
+import { Road } from "./Road";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/main" element={<Slider />} />
         <Route path="/:id" element={<CityPage />} />
         <Route path="/itinerary/:id" element={<Itinerary />} />
+        <Route path="/itinerary/:id/:id" element={<Road />} />
       </Routes>
     </Suspense>
   );
