@@ -5,17 +5,17 @@ export const Itinerary = () => {
   const { id } = useParams();
   const state = useCityStore((state) => state.city);
 
-  const filteredItems = state.filter((item) =>
-    item.id.toString().includes(String(id))
-  );
+  const filteredItems = state.filter((city) =>
+    city.id.toString().includes(String(id))
+  )[0];
   return (
     <div>
-      {filteredItems[0].itinerary.map((item) => {
+      {filteredItems.itinerary.map((route) => {
         return (
           <div>
-            {item.title}
+            {route.title}
             <br />
-            {item.id}
+            {route.id}
           </div>
         );
       })}
