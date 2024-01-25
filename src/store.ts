@@ -36,6 +36,13 @@ export const useCityStore = create<BearState>()((set) => ({
           description: "Moscow_city_description",
           progress: 100,
         },
+        {
+          id: 2,
+          title: "Moscow_city2",
+          img: "https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663320905_22-mykaleidoscope-ru-p-sovremennaya-moskva-oboi-24.jpg",
+          description: "Moscow_city_description2",
+          progress: 100,
+        },
       ],
     },
     {
