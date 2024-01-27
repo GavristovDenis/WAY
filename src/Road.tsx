@@ -10,7 +10,8 @@ export const Road = () => {
 
   return (
     <div>
-      {road.title} <br /> {road.description}
+      <div>{road.title}</div>
+      <div>{road.description}</div>
     </div>
   );
 };

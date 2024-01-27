@@ -13,10 +13,11 @@ export const Itinerary = () => {
         return (
           <div>
             {route.title}
-            <br />
-            <img style={{ width: 100 }} alt={route.img} src={route.img} />
-            {route.description}
-            <Link to={`/itinerary/${id}/${route.id}`}>Перейти</Link>
+            <div>
+              <img style={{ width: 100 }} alt={route.img} src={route.img} />
+              {route.description}
+              <Link to={`/itinerary/${id}/${route.id}`}>Перейти</Link>
+            </div>
           </div>
         );
       })}
