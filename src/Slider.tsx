@@ -14,7 +14,7 @@ export const Slider = () => {
         {state.map(({ id, city, img }) => {
           return (
             <SwiperSlide className="SwiperSlide" key={id}>
-              <img className="background10" alt="" src={img} />
+              <img alt={city} src={img} />
               <div className="SwiperSlideCity">
                 <Link className="SwiperSlideCityLink" to={`/${id}`}>
                   {t(city)}

@@ -1,7 +1,7 @@
 import "./App.scss";
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { LangSwither } from "./LangSwither";
+import { LangSwither } from "./LangSwither/LangSwither";
 import { Slider } from "./Slider";
 import { CityPage } from "./CityPage";
 import { Itinerary } from "./Itinerary";

@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
 import { Link } from "react-router-dom";
-type Lang = "ru" | "en";
+import { Lang } from "./types";
+import { useTranslation } from "react-i18next";
 
-export const LangSwither = () => {
+export const LangSwitcherMain = () => {
   const { i18n } = useTranslation();
-  const [state, setState] = useState(true);
-  const toggle = (lang: Lang) => i18n.changeLanguage(lang);
-  useEffect(() => {
-    setTimeout(() => {
-      setState(false);
-    }, 2000);
-  });
-  if (state) {
-    return (
-      <div className="App">
-        <p className="welcome">WELCOME</p>
-        <div className="wayWrapper">
-          <div className="way">WAY</div>
-        </div>
 
-        <p className="welcome reverse">WELCOME</p>
-      </div>
-    );
-  }
+  const toggle = (lang: Lang) => i18n.changeLanguage(lang);
+
   return (
     <div className="App">
       <div className="appWrapper">
