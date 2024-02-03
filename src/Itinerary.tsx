@@ -14,7 +14,7 @@ export const Itinerary = () => {
           <div>
             {route.title}
             <div>
-              <img style={{ width: 100 }} alt={route.img} src={route.img} />
+              <img style={{ width: 120 }} alt={route.img} src={route.img} />
               {route.description}
               <Link to={`/itinerary/${id}/${route.id}`}>Перейти</Link>
             </div>
