@@ -6,8 +6,11 @@ import { Sidebar } from "./Sidebar/Sidebar";
 import { Help } from "./Help/Help";
 
 function App() {
+  //@ts-ignore
+  const tg = window.Telegram.WebApp;
   return (
     <Suspense fallback="loading">
+      {JSON.stringify(tg)}
       <Routes>
         <Route path="/aaa" element={<LoadingPage />} />
         <Route path="/aaa" element={<Sidebar />} />
