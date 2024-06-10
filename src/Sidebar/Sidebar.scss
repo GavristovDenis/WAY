@@ -1,0 +1,16 @@
+.Sidebar_wrapper {
+  height: 100vh;
+  display: grid;
+  background-color: #2c55c7;
+}
+
+.Sidebar_element {
+  margin: auto;
+}
+.Sidebar_button {
+  height: 45px;
+  .Sidebar_button_place {
+    background-color: #f8c7bb;
+    color: #2c55c7;
+  }
+}
