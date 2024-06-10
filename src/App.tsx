@@ -9,7 +9,7 @@ function App() {
   const [state, setState] = useState();
   useEffect(() => {
     //@ts-ignore
-    setState(window.Telegram.WebApp.initDataUnsafe);
+    setState(window.Telegram);
   });
 
   return (
