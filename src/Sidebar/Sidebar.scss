@@ -8,10 +8,17 @@
   margin: auto;
 }
 .Sidebar_button {
+  button {
+    border: 0;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 4px 16px;
+  }
   height: 45px;
+
   .Sidebar_button_place {
-    background-color: #f8c7bb;
-    color: #2c55c7;
+    background-color: #f3bd51;
+    color: #ffffff;
   }
   .Sidebar_button_city {
     background-color: #eb6666;
