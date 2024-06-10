@@ -7,16 +7,16 @@ export const Sidebar = () => {
         <div className="Sidebar_button Sidebar_button_place">
           <button>места</button>
         </div>
-        <div className="Sidebar_button Sidebar_button_place">
+        <div className="Sidebar_button Sidebar_button_city">
           <button>выбор города</button>
         </div>
-        <div className="Sidebar_button Sidebar_button_place">
+        <div className="Sidebar_button Sidebar_button_poster">
           <button>афиша</button>
         </div>
-        <div className="Sidebar_button Sidebar_button_place">
+        <div className="Sidebar_button Sidebar_button_help">
           <button>помощь</button>
         </div>
-        <div className="Sidebar_button Sidebar_button_place">
+        <div className="Sidebar_button Sidebar_button_about">
           <button>о нас</button>
         </div>
       </div>
