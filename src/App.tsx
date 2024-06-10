@@ -7,6 +7,7 @@ function App() {
   return (
     <Suspense fallback="loading">
       <Routes>
+        <Route path="/aaa" element={<LoadingPage />} />
         <Route path="/" element={<LoadingPage />} />
       </Routes>
     </Suspense>
