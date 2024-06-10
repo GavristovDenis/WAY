@@ -10,7 +10,7 @@ function App() {
   const tg = window.Telegram.WebApp;
   return (
     <Suspense fallback="loading">
-      {JSON.stringify(tg)}
+      {JSON.stringify(tg.initDataUnsafe.user)}
       <Routes>
         <Route path="/aaa" element={<LoadingPage />} />
         <Route path="/aaa" element={<Sidebar />} />
