@@ -12,11 +12,11 @@ function App() {
   const location = useLocation();
   return (
     <Suspense fallback="loading">
-      {location.pathname === "/" ? null : <Header />}
-
+      {/* {location.pathname === "/" ? null : <Header />} */}
+      <Header />
       <Routes>
         <Route path="/" element={<LoadingPage />} />
-        <Route path="/aaa" element={<Sidebar />} />
+        <Route path="/sidebar" element={<Sidebar />} />
         <Route path="/events" />
         <Route path="/places" element={<Places />} />
         <Route path="/events/:id" />
