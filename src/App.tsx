@@ -17,9 +17,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LoadingPage />} />
         <Route path="/aaa" element={<Sidebar />} />
-        <Route path="/billboard" />
+        <Route path="/events" />
         <Route path="/places" element={<Places />} />
-        <Route path="/billboard/:id" />
+        <Route path="/events/:id" />
         <Route path="/places/:id" element={<CityItem />} />
         <Route path="/help" element={<Help />} />
       </Routes>

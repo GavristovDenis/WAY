@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-import { mockData } from "../const/mockData";
+import { placesData } from "../const/mockData";
 
 export const CityItem: FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -9,7 +9,7 @@ export const CityItem: FC = () => {
     return <div>No item found</div>;
   }
 
-  const item = mockData.find((item) => item.id === parseInt(id, 10));
+  const item = placesData.find((item) => item.id === parseInt(id, 10));
 
   if (!item) {
     return <div>Item not found</div>;

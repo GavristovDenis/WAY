@@ -1,5 +1,5 @@
 import "./Places.scss";
-import { mockData } from "../const/mockData";
+import { placesData } from "../const/mockData";
 import { ListData } from "../types";
 import { Link } from "react-router-dom";
 import { Input } from "../components/Input";
@@ -12,7 +12,7 @@ export const Places = () => {
         <Input />
       </div>
       <div className="Places_list">
-        {mockData.map((item: ListData) => {
+        {placesData.map((item: ListData) => {
           return (
             <Link
               to={`/places/${item.id}}`}
@@ -23,6 +23,8 @@ export const Places = () => {
                 published={item.published}
                 name={item.name}
                 shortDescription={item.shortDescription}
+                previewImage={item.previewImage}
+                isAdded={item.isAdded}
               />
             </Link>
           );

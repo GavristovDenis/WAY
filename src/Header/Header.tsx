@@ -13,7 +13,7 @@ export const Header = () => {
       case "/help":
         setTitle("Помощь");
         break;
-      case "/billboard":
+      case "/events":
         setTitle("Афиша");
         break;
       default:

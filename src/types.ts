@@ -21,4 +21,6 @@ export interface ListData {
   name: string;
   published: string;
   shortDescription: string;
+  previewImage: any;
+  isAdded: boolean;
 }

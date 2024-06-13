@@ -1,17 +1,22 @@
 import { memo, FC } from "react";
 import "./ListCard.scss";
+import { StarIcon } from "../../svg/Star";
 interface ListCardProps {
   published: string;
   name: string;
   shortDescription: string;
+  previewImage: string;
+  isAdded: boolean;
 }
 const ListCard: FC<ListCardProps> = memo(
-  ({ published, name, shortDescription }) => {
+  ({ published, name, shortDescription, previewImage, isAdded }) => {
     return (
       <div className="List_card_wrapper">
         <div className="List_card_info">
           <div className="List_card_info_date">{published}</div>
-          <div className="List_card_info_name">{name}</div>
+          <div className="List_card_info_name">
+            {name} {isAdded ? <StarIcon /> : null}
+          </div>
           <div className="List_card_info_short_description">
             {shortDescription}
           </div>
@@ -57,7 +62,11 @@ const ListCard: FC<ListCardProps> = memo(
             />
           </svg>
         </div>
-        <div className="List_card_image"></div>
+        <img
+          className="List_card_image"
+          src={previewImage}
+          alt="Изображение недоступно"
+        />
       </div>
     );
   }
