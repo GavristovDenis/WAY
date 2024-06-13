@@ -1,6 +1,6 @@
 import "./App.scss";
 import { Suspense } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { LoadingPage } from "./LoadingPage/LoadingPage";
 import { Sidebar } from "./Sidebar/Sidebar";
 import { Help } from "./Help/Help";
@@ -9,7 +9,7 @@ import { CityItem } from "./Description/Description";
 import { Header } from "./Header/Header";
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
   return (
     <Suspense fallback="loading">
       {/* {location.pathname === "/" ? null : <Header />} */}
