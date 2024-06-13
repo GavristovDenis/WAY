@@ -27,7 +27,7 @@ export const CityItem: FC = () => {
         </div>
         <div className="Description_name">{item.name}</div>
         <div className="Author_and_when">
-          <div>от{item.author}</div>·<div>{item.date}</div>
+          <div>от {item.author}</div>·<div>{item.date}</div>
         </div>
         <p>{item.description}</p>
         <div className="Descritpion_button_container">
