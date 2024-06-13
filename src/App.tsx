@@ -1,18 +1,27 @@
 import "./App.scss";
 import { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { LoadingPage } from "./LoadingPage/LoadingPage";
 import { Sidebar } from "./Sidebar/Sidebar";
 import { Help } from "./Help/Help";
+import { Places } from "./Places/Places";
+import { CityItem } from "./Description/Description";
+import { Header } from "./Header/Header";
 
 function App() {
+  const location = useLocation();
   return (
     <Suspense fallback="loading">
-      <Routes>
-        <Route path="/aaa" element={<LoadingPage />} />
-        <Route path="/aaa" element={<Sidebar />} />
+      {location.pathname === "/" ? null : <Header />}
 
-        <Route path="/" element={<Help />} />
+      <Routes>
+        <Route path="/" element={<LoadingPage />} />
+        <Route path="/aaa" element={<Sidebar />} />
+        <Route path="/billboard" />
+        <Route path="/places" element={<Places />} />
+        <Route path="/billboard/:id" />
+        <Route path="/places/:id" element={<CityItem />} />
+        <Route path="/help" element={<Help />} />
       </Routes>
     </Suspense>
   );
