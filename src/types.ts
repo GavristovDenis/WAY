@@ -19,8 +19,11 @@ export interface ListData {
   id: number;
   description: string;
   name: string;
-  published: string;
+  whenPublished: string;
   shortDescription: string;
   previewImage: any;
   isAdded: boolean;
+  sliderImages: string[];
+  author: string;
+  date: string;
 }
