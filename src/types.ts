@@ -14,3 +14,16 @@ export interface CityType {
   progress: number;
   itinerary: Itinerary[];
 }
+
+export interface ListData {
+  id: number;
+  description: string;
+  name: string;
+  whenPublished: string;
+  shortDescription: string;
+  previewImage: any;
+  isAdded: boolean;
+  sliderImages: string[];
+  author: string;
+  date: string;
+}
