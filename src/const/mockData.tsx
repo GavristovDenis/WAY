@@ -17,7 +17,8 @@ export const placesData: ListData[] = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
   {
     id: 2,
@@ -34,7 +35,8 @@ export const placesData: ListData[] = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
 
   {
@@ -51,7 +53,8 @@ export const placesData: ListData[] = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
 ];
 
@@ -71,7 +74,8 @@ export const eventsData = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
   {
     id: 2,
@@ -87,7 +91,8 @@ export const eventsData = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
   {
     id: 3,
@@ -103,6 +108,7 @@ export const eventsData = [
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=CDrp7H9k",
+    mapLink:
+      "yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.620170%2C55.744979&pt=37.673098%2C55.757134&z=15",
   },
 ];
