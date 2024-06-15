@@ -26,4 +26,5 @@ export interface ListData {
   sliderImages: string[];
   author: string;
   date: string;
+  mapLink: string;
 }

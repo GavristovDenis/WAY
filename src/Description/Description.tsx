@@ -31,7 +31,9 @@ export const CityItem: FC = () => {
         </div>
         <p>{item.description}</p>
         <div className="Descritpion_button_container">
-          <button className="Description_button">открыть карту</button>
+          <button className="Description_button">
+            <a href={item?.mapLink}>открыть карту</a>
+          </button>
         </div>
       </div>
     </div>
