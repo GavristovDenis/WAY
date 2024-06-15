@@ -32,12 +32,8 @@ export const CityItem: FC = () => {
         <p>{item.description}</p>
         <div className="Descritpion_button_container">
           <button className="Description_button">
-            <a
-              href="https://www.google.com/maps/?daddr=37.4220,-122.0841&mode=d"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Добраться до Googleplex на автомобиле
+            <a target="_blank" rel="noreferrer" href={item?.mapLink}>
+              открыть карту
             </a>
           </button>
         </div>
