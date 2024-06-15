@@ -32,7 +32,11 @@ export const CityItem: FC = () => {
         <p>{item.description}</p>
         <div className="Descritpion_button_container">
           <button className="Description_button">
-            <a target="_blank" rel="noreferrer" href={item?.mapLink}>
+            <a
+              href="yandexmaps://maps.yandex.ru/maps/org/ges_2/216491468916/?ll=37.612731%2C55.742651&z=16.71"
+              target="_blank"
+              rel="noreferrer"
+            >
               открыть карту
             </a>
           </button>
