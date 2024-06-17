@@ -6,18 +6,14 @@ export const Header = () => {
   const location = useLocation();
   const [title, setTitle] = useState("");
   useEffect(() => {
-    switch (location.pathname) {
-      case "/places":
-        setTitle("Места");
-        break;
-      case "/help":
-        setTitle("Помощь");
-        break;
-      case "/events":
-        setTitle("Афиша");
-        break;
-      default:
-        setTitle(" ");
+    if (location.pathname.includes("places")) {
+      setTitle("Места");
+    } else if (location.pathname.includes("help")) {
+      setTitle("Помощь");
+    } else if (location.pathname.includes("events")) {
+      setTitle("Афиша");
+    } else {
+      setTitle("");
     }
   }, [location.pathname]);
   return (
