@@ -1,7 +1,9 @@
+@import "../../fonts/fonts.scss";
 .Input_container {
   position: relative;
 }
 .List_input {
+  font-family: "Geologica Thin";
   padding-left: 50px;
   height: 40px;
   width: 300px;

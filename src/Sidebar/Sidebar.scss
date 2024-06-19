@@ -1,3 +1,4 @@
+@import "../fonts/fonts.scss";
 .Sidebar_wrapper {
   margin-top: 20%;
   display: grid;
@@ -6,6 +7,7 @@
 
 .Sidebar_element {
   margin: auto;
+  z-index: 2;
 }
 .Sidebar_button {
   button {
@@ -14,6 +16,7 @@
     font-weight: 700;
     padding: 4px 16px;
     border-radius: 12px;
+    font-family: "Soyuz Grotesk Bold";
   }
   height: 45px;
   margin-bottom: 16px;
@@ -41,4 +44,17 @@
 
 .Sidebar_link {
   text-decoration: none;
+}
+
+.Menu_svg_top {
+  position: absolute;
+  bottom: 150px;
+  z-index: 2;
+}
+
+.Menu_svg_bottom {
+  position: absolute;
+  top: 350px;
+  z-index: 2;
+  left: 200px;
 }
