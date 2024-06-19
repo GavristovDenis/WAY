@@ -1,8 +1,14 @@
 import "./Input.scss";
-const InputWithIcon = () => {
+const InputWithIcon = ({ search, setSearch }: any) => {
   return (
     <div className="Input_container">
-      <input type="text" placeholder="Поиск" className="List_input" />
+      <input
+        value={search}
+        onChange={(event) => setSearch(event.target.value)}
+        type="text"
+        placeholder="Поиск"
+        className="List_input"
+      />
       <div
         className="Search_icon"
         style={{

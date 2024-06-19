@@ -4,15 +4,32 @@ import { ListData } from "../types";
 import { Link } from "react-router-dom";
 import { Input } from "../components/Input";
 import { ListCard } from "../components/ListCard";
+import { useEffect, useState } from "react";
 
 export const Places = () => {
+  const [search, setSearch] = useState("");
+  const [data, setDate] = useState(placesData);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!search) {
+        setDate(placesData);
+      }
+      const result = placesData.filter((title) =>
+        title.name.toLowerCase().includes(search.toLowerCase())
+      );
+      setDate(result);
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [search]);
+
   return (
     <div className="Places_wrapper">
       <div className="Places_input_container">
-        <Input />
+        <Input search={search} setSearch={setSearch} />
       </div>
       <div className="Places_list">
-        {placesData.map((item: ListData) => {
+        {data.map((item: ListData) => {
           return (
             <Link
               to={`/places/${item.id}}`}
