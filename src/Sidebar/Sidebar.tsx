@@ -20,17 +20,7 @@ export const Sidebar = () => {
       </div>
       <div className="Sidebar_element">
         <div className="Sidebar_button">
-          <Link to={"/places"} className="Sidebar_link">
-            <button className="Sidebar_button_place">места</button>
-          </Link>
-        </div>
-        <div className="Sidebar_button">
-          <button className="Sidebar_button_city">выбор города</button>
-        </div>
-        <div className="Sidebar_button">
-          <Link to={"/events"} className="Sidebar_link">
-            <button className="Sidebar_button_poster">афиша</button>
-          </Link>
+          <button className="Sidebar_button_about">о нас</button>
         </div>
         <div className="Sidebar_button">
           <Link to={"/help"} className="Sidebar_link">
@@ -38,7 +28,17 @@ export const Sidebar = () => {
           </Link>
         </div>
         <div className="Sidebar_button">
-          <button className="Sidebar_button_about">о нас</button>
+          <Link to={"/events"} className="Sidebar_link">
+            <button className="Sidebar_button_poster">события</button>
+          </Link>
+        </div>
+        <div className="Sidebar_button">
+          <Link to={"/places"} className="Sidebar_link">
+            <button className="Sidebar_button_place">места</button>
+          </Link>
+        </div>
+        <div className="Sidebar_button">
+          <button className="Sidebar_button_city">выбор города</button>
         </div>
       </div>
     </div>

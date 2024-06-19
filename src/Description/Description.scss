@@ -48,7 +48,7 @@
   font-weight: 700;
   padding: 4px 16px;
   border-radius: 12px;
-  background-color: #f3bd51;
+  background-color: #eb6669;
 
   margin-top: 30px;
   margin-bottom: 30px;
@@ -57,4 +57,11 @@
 .Description_link {
   text-decoration: none;
   color: white;
+}
+.Description_button:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  .Description_link {
+    color: #eb6669;
+  }
 }
