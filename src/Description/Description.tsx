@@ -19,6 +19,7 @@ export const CityItem: FC = () => {
   if (!item) {
     return <div>Страница не найдена</div>;
   }
+  console.log(item.description);
   return (
     <div className="Description_wrapper">
       <div className="Description_container">
@@ -29,7 +30,7 @@ export const CityItem: FC = () => {
         <div className="Author_and_when">
           <div>от {item.author}</div>·<div>{item.date}</div>
         </div>
-        <p>{item.description}</p>
+        <p dangerouslySetInnerHTML={{ __html: item.description }} />
         <div className="Descritpion_button_container">
           <button className="Description_button">
             <a
