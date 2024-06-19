@@ -29,7 +29,7 @@ export const Header = () => {
   return (
     <div className="Header_container">
       <div className="Header_wrapper">
-        <Link to={"/sidebar"}>
+        <Link style={{ zIndex: 5 }} to={"/sidebar"}>
           <SidebarIcon />
         </Link>
         <div>{title}</div>
