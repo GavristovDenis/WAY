@@ -1,3 +1,4 @@
+@import "../../fonts/fonts.scss";
 .List_card_wrapper {
   color: #ffffff;
   text-decoration: none;
@@ -22,14 +23,17 @@
 
 .List_card_info_date {
   font-size: 12px;
+  font-family: "Geologica Thin";
 }
 
 .List_card_info_name {
   font-size: 18px;
   font-weight: bold;
+  font-family: "Geologica Bold";
 }
 
 .List_card_info_short_description {
   font-size: 12px;
   width: 200px;
+  font-family: "Geologica Thin";
 }

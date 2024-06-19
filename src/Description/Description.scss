@@ -1,3 +1,4 @@
+@import "../fonts/fonts.scss";
 .Description_wrapper {
   background: #2c55c7;
   color: #ffffff;
@@ -20,6 +21,7 @@
 .Description_name {
   font-size: 30px;
   font-weight: bold;
+  font-family: "Geologica Bold";
 }
 
 .Author_and_when {
@@ -27,10 +29,12 @@
   justify-content: space-between;
   width: 250px;
   font-size: 14px;
+  font-family: "Geologica Thin";
 }
 
 .Description_text {
   font-size: 16px;
+  font-family: "Geologica";
 }
 
 .Descritpion_button_container {
@@ -45,10 +49,12 @@
   padding: 4px 16px;
   border-radius: 12px;
   background-color: #f3bd51;
-  color: #ffffff;
+
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Soyuz Grotesk Bold";
 }
 .Description_link {
   text-decoration: none;
+  color: white;
 }

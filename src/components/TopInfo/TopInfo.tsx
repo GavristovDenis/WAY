@@ -9,7 +9,7 @@ const TopInfo = () => {
     <div className="Places_top_info">
       {location.pathname === "/places" || location.pathname === "/events" ? (
         <>
-          <div className="Top_info_text">Москва</div>
+          <div className="Top_info_text">МОСКВА</div>
           <div className="Top_info_star">
             <StarIcon />
           </div>

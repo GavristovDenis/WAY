@@ -8,3 +8,7 @@
   width: 350px;
   border-radius: 12px;
 }
+
+:where(.css-dev-only-do-not-override-zg0ahe).ant-carousel .slick-dots-bottom {
+  z-index: 1;
+}
