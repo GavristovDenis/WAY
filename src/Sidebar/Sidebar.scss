@@ -54,6 +54,13 @@
 
 .Menu_svg_bottom {
   position: absolute;
+  bottom: -20%;
+  z-index: 2;
+  left: 50%;
+}
+.Menu_polar_star {
+  position: absolute;
   bottom: 50%;
   z-index: 2;
+  left: 80%;
 }
