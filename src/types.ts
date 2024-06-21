@@ -23,8 +23,13 @@ export interface ListData {
   shortDescription: string;
   previewImage: any;
   isAdded: boolean;
-  sliderImages: string[];
+  sliderImages: City[];
   author: string;
   date: string;
   mapLink: string;
+}
+
+export interface City {
+  image: string;
+  name?: string;
 }

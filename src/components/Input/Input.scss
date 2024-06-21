@@ -18,3 +18,19 @@
     outline: none;
   }
 }
+.List_input_for_city_select {
+  font-family: "Geologica Thin";
+  padding-left: 50px;
+  height: 40px;
+  width: 300px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #476bce;
+  color: #476bce;
+  &::placeholder {
+    color: #476bce;
+  }
+  &:focus {
+    outline: none;
+  }
+}

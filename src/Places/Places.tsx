@@ -26,7 +26,12 @@ export const Places = () => {
   return (
     <div className="Places_wrapper">
       <div className="Places_input_container">
-        <Input search={search} setSearch={setSearch} />
+        <Input
+          search={search}
+          setSearch={setSearch}
+          placeholderText="Поиск"
+          color="white"
+        />
       </div>
       <div className="Places_list">
         {data.map((item: ListData) => {

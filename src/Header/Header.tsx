@@ -22,6 +22,8 @@ export const Header = () => {
       setTitle("Афиша");
     } else if (location.pathname.includes("sidebar")) {
       setTitle("Меню");
+    } else if (location.pathname.includes("city_select")) {
+      setTitle("Выбор города");
     } else {
       setTitle("");
     }
@@ -32,6 +34,7 @@ export const Header = () => {
         <Link style={{ zIndex: 5 }} to={"/sidebar"}>
           <SidebarIcon />
         </Link>
+
         <div>{title}</div>
         {location.pathname.includes("sidebar") ||
         location.pathname.includes("%") ? (
@@ -40,7 +43,9 @@ export const Header = () => {
           <Avatar />
         )}
       </div>
-      <TopInfo />
+      {location.pathname === "/places" || location.pathname === "/events" ? (
+        <TopInfo />
+      ) : null}
     </div>
   );
 };
