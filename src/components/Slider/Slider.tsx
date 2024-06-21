@@ -9,6 +9,7 @@ interface SliderProps {
   array: City[];
 }
 const Slider: FC<SliderProps> = ({ array }) => {
+  const selectedCity = useCityStore((state) => state.selectedCity);
   const setSelectedCity = useCityStore((state) => state.setSelectedCity);
   const location = useLocation();
   const navigate = useNavigate();
@@ -40,7 +41,13 @@ const Slider: FC<SliderProps> = ({ array }) => {
               alt="Изображение не найдено"
               onClick={() => (item.name ? citySelect(item.name) : null)}
             />
-            <div className="City_select_city_title">
+            <div
+              className={
+                selectedCity === item.name
+                  ? "City_select_city_title_red"
+                  : "City_select_city_title"
+              }
+            >
               {location.pathname === "/city_select" ? item.name : null}
             </div>
           </>

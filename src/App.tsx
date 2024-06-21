@@ -20,20 +20,18 @@ function App() {
   useEffect(() => {
     const selectedCityLocalStorage = localStorage.getItem("selectedCity");
     const isSelectedLocalStorage = localStorage.getItem("isSelected");
-
-    if (!selectedCityLocalStorage && !isSelectedLocalStorage) {
-      return;
-    } else {
-      setSelectedCity(selectedCity);
-      setIsSelected(isSelected);
+    if (selectedCityLocalStorage !== null && isSelectedLocalStorage !== null) {
+      setSelectedCity(JSON.parse(selectedCityLocalStorage));
+      setIsSelected(JSON.parse(isSelectedLocalStorage));
     }
-  }, [isSelected, selectedCity, setIsSelected, setSelectedCity]);
-
+  }, [setIsSelected, setSelectedCity]);
   useEffect(() => {
     localStorage.setItem("selectedCity", JSON.stringify(selectedCity));
     localStorage.setItem("isSelected", JSON.stringify(isSelected));
-  }, [selectedCity, isSelected]);
+  }, [isSelected, selectedCity]);
 
+  console.log(selectedCity);
+  console.log(localStorage.getItem("selectedCity"));
   return (
     <Suspense fallback="loading">
       <div>

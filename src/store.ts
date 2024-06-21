@@ -101,7 +101,7 @@ export const useCityStore = create<CityState>()((set) => ({
     },
   ],
   increase: (by) => set((state) => ({ city: state.city })),
-  selectedCity: "Москва",
+  selectedCity: "",
   setSelectedCity: (to) => set({ selectedCity: to }),
   isSelected: false,
   setIsSelected: (to) => set({ isSelected: to }),
