@@ -1,3 +1,4 @@
+@import "../../fonts/fonts.scss";
 .Slider {
   width: 350px;
   height: 350px;
@@ -10,4 +11,14 @@
 
 :where(.css-dev-only-do-not-override-zg0ahe).ant-carousel .slick-dots-bottom {
   z-index: 0;
+}
+
+.City_select_city_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: "Soyuz Grotesk Bold";
+  font-size: 20px;
+  color: #2c55c7;
 }

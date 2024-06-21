@@ -4,6 +4,10 @@ import { CityType } from "./types";
 interface CityState {
   city: CityType[];
   increase: (by: number) => void;
+  selectedCity: string;
+  setSelectedCity: (to: string) => void;
+  isSelected: boolean;
+  setIsSelected: (to: boolean) => void;
 }
 
 export const useCityStore = create<CityState>()((set) => ({
@@ -97,4 +101,8 @@ export const useCityStore = create<CityState>()((set) => ({
     },
   ],
   increase: (by) => set((state) => ({ city: state.city })),
+  selectedCity: "Москва",
+  setSelectedCity: (to) => set({ selectedCity: to }),
+  isSelected: false,
+  setIsSelected: (to) => set({ isSelected: to }),
 }));

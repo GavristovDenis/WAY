@@ -1,6 +1,6 @@
 @import "../fonts/fonts.scss";
 .Sidebar_wrapper {
-  margin-top: 20%;
+  margin-top: 30%;
   display: grid;
   background-color: #2c55c7;
 }
@@ -53,8 +53,19 @@
 }
 
 .Menu_svg_bottom {
+  max-width: 300px;
   position: absolute;
-  top: 350px;
+  right: -50px;
+}
+
+.Menu_polar_star {
+  position: absolute;
+  right: 25px;
+  top: 60px;
   z-index: 2;
-  left: 200px;
+}
+
+.Svg_wrapper {
+  overflow: hidden;
+  position: relative;
 }

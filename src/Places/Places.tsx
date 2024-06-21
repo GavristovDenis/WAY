@@ -9,7 +9,7 @@ export const Places = () => {
   return (
     <div className="Places_wrapper">
       <div className="Places_input_container">
-        <Input />
+        <Input placeholderText="Поиск" color="white" />
       </div>
       <div className="Places_list">
         {placesData.map((item: ListData) => {

@@ -3,7 +3,7 @@ export const BackgroundFlowerBottom = () => {
     <div>
       <svg
         width="280"
-        height="487"
+        height="500"
         viewBox="0 0 280 487"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
