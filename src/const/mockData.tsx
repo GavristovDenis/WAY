@@ -12,8 +12,8 @@ export const placesData: ListData[] = [
     previewImage: require("../img/preview1.png"),
     isAdded: true,
     sliderImages: [
-      require("../img/preview1.png"),
-      require("../img/preview2.png"),
+      { image: require("../img/preview1.png") },
+      { image: require("../img/preview2.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
@@ -29,8 +29,8 @@ export const placesData: ListData[] = [
     previewImage: require("../img/preview2.png"),
     isAdded: true,
     sliderImages: [
-      require("../img/preview2.png"),
-      require("../img/preview3.png"),
+      { image: require("../img/preview2.png") },
+      { image: require("../img/preview3.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
@@ -46,8 +46,8 @@ export const placesData: ListData[] = [
     previewImage: require("../img/preview3.png"),
     isAdded: false,
     sliderImages: [
-      require("../img/preview3.png"),
-      require("../img/preview1.png"),
+      { image: require("../img/preview3.png") },
+      { image: require("../img/preview1.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
@@ -98,11 +98,24 @@ export const eventsData = [
     previewImage: require("../img/preview6.png"),
     isAdded: false,
     sliderImages: [
-      require("../img/preview6.png"),
-      require("../img/preview4.png"),
+      {
+        image: require("../img/preview6.png"),
+      },
+      { image: require("../img/preview4.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+  },
+];
+
+export const cities = [
+  {
+    name: "Москва",
+    image: require("../img/moscow.png"),
+  },
+  {
+    name: "Санкт-Петербург",
+    image: require("../img/spb.jpg"),
   },
 ];

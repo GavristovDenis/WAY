@@ -38,7 +38,9 @@ export const Sidebar = () => {
           </Link>
         </div>
         <div className="Sidebar_button">
-          <button className="Sidebar_button_city">выбор города</button>
+          <Link to={"/city_select"} className="Sidebar_link">
+            <button className="Sidebar_button_city">выбор города</button>
+          </Link>
         </div>
       </div>
     </div>
