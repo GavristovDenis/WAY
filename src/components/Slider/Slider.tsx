@@ -14,7 +14,7 @@ const Slider: FC<SliderProps> = ({ array }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,

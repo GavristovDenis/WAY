@@ -31,8 +31,6 @@ function App() {
     localStorage.setItem("isSelected", JSON.stringify(isSelected));
   }, [isSelected, selectedCity]);
 
-  console.log(selectedCity);
-  console.log(localStorage.getItem("selectedCity"));
   return (
     <Suspense fallback="loading">
       <div>

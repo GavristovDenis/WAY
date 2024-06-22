@@ -1,4 +1,4 @@
-import "./Events.scss";
+import "../Places/Places.scss";
 import { eventsData } from "../const/mockData";
 import { ListData } from "../types";
 import { Link } from "react-router-dom";

@@ -19,7 +19,7 @@ export const CityItem: FC = () => {
   if (!item) {
     return <div>Страница не найдена</div>;
   }
-  console.log(item.description);
+
   return (
     <div className="Description_wrapper">
       <div className="Description_container">
