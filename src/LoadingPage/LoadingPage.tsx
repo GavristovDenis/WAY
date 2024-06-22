@@ -1,13 +1,14 @@
 import { useEffect } from "react";
 import "./LoadingPage.scss";
-import { redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const LoadingPage = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     setTimeout(() => {
-      return redirect("/city_select");
+      navigate("/city_select");
     }, 2000);
-  }, []);
+  }, [navigate]);
   return (
     <div className="LoadingPage_wrapper">
       <div className="LoadingPage_element">
