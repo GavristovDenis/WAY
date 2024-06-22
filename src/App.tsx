@@ -10,6 +10,7 @@ import { Header } from "./Header/Header";
 import { Events } from "./Events/Events";
 import { CitySelect } from "./CitySelect/CitySelect";
 import { useCityStore } from "./store";
+import { About } from "./About/About";
 function App() {
   const location = useLocation();
   const selectedCity = useCityStore((state) => state.selectedCity);
@@ -46,6 +47,7 @@ function App() {
           <Route path="/places/:id" element={<CityItem />} />
           <Route path="/help" element={<Help />} />
           <Route path="/city_select" element={<CitySelect />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Suspense>

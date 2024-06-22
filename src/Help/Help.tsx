@@ -1,3 +1,4 @@
+import { BackgroundPolarStar } from "../svg/BackgroundPolarStar";
 import "./Help.scss";
 
 export const Help = () => {
@@ -55,6 +56,9 @@ export const Help = () => {
             />
           </svg>
         </div>
+      </div>
+      <div className="Menu_polar_star">
+        <BackgroundPolarStar />
       </div>
     </div>
   );

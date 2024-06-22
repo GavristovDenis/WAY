@@ -20,7 +20,10 @@ export const Sidebar = () => {
       </div>
       <div className="Sidebar_element">
         <div className="Sidebar_button">
-          <button className="Sidebar_button_about">о нас</button>
+          {" "}
+          <Link to={"/about"} className="Sidebar_link">
+            <button className="Sidebar_button_about">о нас</button>
+          </Link>
         </div>
         <div className="Sidebar_button">
           <Link to={"/help"} className="Sidebar_link">

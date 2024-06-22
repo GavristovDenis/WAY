@@ -1,0 +1,13 @@
+.about {
+  margin: 0 30px;
+  * {
+    color: white;
+    font-family: "Geologica Thin";
+  }
+  .Menu_polar_star {
+    position: absolute;
+    top: 5%;
+    z-index: 2;
+    left: 70%;
+  }
+}
