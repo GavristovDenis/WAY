@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import "./LoadingPage.scss";
+import { redirect } from "react-router-dom";
 
 export const LoadingPage = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      return redirect("/city_select");
+    }, 2000);
+  }, []);
   return (
     <div className="LoadingPage_wrapper">
       <div className="LoadingPage_element">
