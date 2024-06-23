@@ -35,7 +35,7 @@ export const Header = () => {
         </Link>
 
         <div>{title}</div>
-        <BackArrow onClick={goBack} />
+        {location.pathname === "/" ? <BackArrow onClick={goBack} /> : null}
       </div>
       {location.pathname === "/places" || location.pathname === "/events" ? (
         <TopInfo />
