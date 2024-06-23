@@ -6,6 +6,11 @@
   flex-direction: row;
   margin-bottom: 10px;
   justify-content: space-between;
+  .List_card_image_wrapper {
+    width: 48%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 .List_card_wrapper_reverse {
   color: #ffffff;
@@ -16,10 +21,11 @@
   justify-content: space-between;
 }
 .List_card_image {
-  height: 170px;
-  width: 170px;
+  height: 184px;
+  width: 184px;
+  margin-left: 8px;
+  margin-right: 8px;
   border-radius: 12px;
-  margin-right: 12px;
 }
 
 .List_card_info {
@@ -27,15 +33,23 @@
   background-color: #eff2ff;
   display: flex;
   padding: 12px 20px 12px 12px;
-  margin-right: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
   width: 152px;
   height: 152px;
   border-radius: 12px;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 12px;
 }
+.List_card_info_wrapper {
+  width: 48%;
+}
 
+.List_card_info:hover {
+  color: #fff;
+  background-color: #426aff;
+}
 .List_card_info_date {
   font-size: 12px;
   font-family: "Geologica Thin";
