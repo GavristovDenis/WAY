@@ -26,10 +26,15 @@ export const Events = () => {
   return (
     <div className="Places_wrapper">
       <div className="Places_input_container">
-        <Input search={search} setSearch={setSearch} />
+        <Input
+          search={search}
+          setSearch={setSearch}
+          placeholderText="Поиск"
+          color="white"
+        />
       </div>
       <div className="Places_list">
-        {data.map((item: ListData) => {
+        {data.map((item: ListData, id: number) => {
           return (
             <Link
               to={`/events/${item.id}}`}
@@ -37,6 +42,7 @@ export const Events = () => {
               key={item.id}
             >
               <ListCard
+                id={id}
                 published={item.whenPublished}
                 name={item.name}
                 shortDescription={item.shortDescription}

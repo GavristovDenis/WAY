@@ -1,6 +1,8 @@
 @import "../../fonts/fonts.scss";
 .Input_container {
+  margin-bottom: 18px;
   position: relative;
+  color: #476bce !important;
 }
 .List_input {
   font-family: "Geologica Thin";
@@ -10,9 +12,9 @@
   border-radius: 8px;
   font-size: 16px;
   border: 1px solid #e0e0e0;
-  color: #476bce;
+  color: #476bce !important;
   &::placeholder {
-    color: #476bce;
+    color: #476bce !important;
   }
   &:focus {
     outline: none;

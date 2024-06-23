@@ -24,7 +24,7 @@ const InputWithIcon: FC<InputWithIconProps> = memo(
           className="Search_icon"
           style={{
             position: "absolute",
-            top: "35%",
+            top: "50%",
             left: "10px",
             transform: "translateY(-50%)",
           }}

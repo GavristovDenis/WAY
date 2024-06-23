@@ -34,7 +34,7 @@ export const Places = () => {
         />
       </div>
       <div className="Places_list">
-        {data.map((item: ListData) => {
+        {data.map((item: ListData, id: number) => {
           return (
             <Link
               to={`/places/${item.id}}`}
@@ -42,6 +42,7 @@ export const Places = () => {
               key={item.id}
             >
               <ListCard
+                id={id}
                 published={item.whenPublished}
                 name={item.name}
                 shortDescription={item.shortDescription}
