@@ -19,30 +19,31 @@ export const CityItem: FC = () => {
   if (!item) {
     return <div>Страница не найдена</div>;
   }
-
+  console.log(item.sliderImages);
   return (
     <div className="Description_wrapper">
       <div className="Description_container">
         <div className="Description_slider_container">
           <Slider array={item.sliderImages} />
         </div>
-        <div className="Description_name">{item.name}</div>
         <div className="Author_and_when">
           <div>от {item.author}</div>·<div>{item.date}</div>
         </div>
+        <div className="Description_name">{item.name}</div>
+
         <p dangerouslySetInnerHTML={{ __html: item.description }} />
-        <div className="Descritpion_button_container">
-          <button className="Description_button">
-            <a
-              className="Description_link"
-              href={item.mapLink}
-              target="_blank"
-              rel="noreferrer"
-            >
-              открыть карту
-            </a>
-          </button>
-        </div>
+      </div>
+      <div className="Descritpion_button_container">
+        <button className="Description_button">
+          <a
+            className="Description_link"
+            href={item.mapLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            открыть карту
+          </a>
+        </button>
       </div>
     </div>
   );

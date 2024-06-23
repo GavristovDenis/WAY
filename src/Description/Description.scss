@@ -1,14 +1,17 @@
 @import "../fonts/fonts.scss";
 .Description_wrapper {
   background: #415ef4;
-  color: #ffffff;
+  color: #415ef4;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 30px;
 }
 
 .Description_container {
-  width: 350px;
+  background-color: #fff;
+  width: 94%;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .Description_container > * {
@@ -26,6 +29,7 @@
 }
 
 .Author_and_when {
+  color: #eb6669;
   display: flex;
   justify-content: space-between;
   width: 250px;

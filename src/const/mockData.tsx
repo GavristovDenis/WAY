@@ -63,11 +63,11 @@ export const eventsData = [
     shortDescription:
       "Электростанция, выведена из эксплуатации, ныне культурный центр",
     description: "123",
-    previewImage: require("../img/preview4.png"),
+    previewImage: require("../img/preview3.png"),
     isAdded: true,
     sliderImages: [
-      require("../img/preview4.png"),
-      require("../img/preview5.png"),
+      { image: require("../img/preview3.png") },
+      { image: require("../img/preview1.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
@@ -82,8 +82,8 @@ export const eventsData = [
     previewImage: require("../img/preview5.png"),
     isAdded: true,
     sliderImages: [
-      require("../img/preview5.png"),
-      require("../img/preview6.png"),
+      { image: require("../img/preview3.png") },
+      { image: require("../img/preview1.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
@@ -98,10 +98,8 @@ export const eventsData = [
     previewImage: require("../img/preview6.png"),
     isAdded: false,
     sliderImages: [
-      {
-        image: require("../img/preview6.png"),
-      },
-      { image: require("../img/preview4.png") },
+      { image: require("../img/preview3.png") },
+      { image: require("../img/preview1.png") },
     ],
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",

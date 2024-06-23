@@ -1,11 +1,13 @@
 @import "../../fonts/fonts.scss";
 
 .Slider {
+  background-color: white;
   z-index: 0;
   width: 350px;
   height: 100%;
 }
 .Slider_image {
+  background-color: white;
   height: 350px;
   width: 350px;
   border-radius: 12px;
