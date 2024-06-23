@@ -41,7 +41,7 @@ export const CityItem: FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            открыть карту
+            открыть_карту
           </a>
         </button>
       </div>

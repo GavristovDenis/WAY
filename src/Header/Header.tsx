@@ -19,7 +19,7 @@ export const Header = () => {
     } else if (location.pathname.includes("help")) {
       setTitle("Помощь");
     } else if (location.pathname.includes("events")) {
-      setTitle("Афиша");
+      setTitle("События");
     } else if (location.pathname.includes("sidebar")) {
       setTitle("Меню");
     } else if (location.pathname.includes("city_select")) {

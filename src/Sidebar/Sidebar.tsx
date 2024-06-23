@@ -43,7 +43,7 @@ export const Sidebar = () => {
           </div>
           <div className="Sidebar_button">
             <Link to={"/city_select"} className="Sidebar_link">
-              <button className="Sidebar_button_city">выбор города</button>
+              <button className="Sidebar_button_city">выбор_города</button>
             </Link>
           </div>
         </div>
