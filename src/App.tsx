@@ -34,7 +34,8 @@ function App() {
   return (
     <Suspense fallback="loading">
       <div>
-        {location.pathname === "/city_select" && selectedCity ? null : (
+        {(location.pathname === "/city_select" && selectedCity) ||
+        location.pathname === "/" ? null : (
           <Header />
         )}
 
