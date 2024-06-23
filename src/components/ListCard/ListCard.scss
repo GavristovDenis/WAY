@@ -4,7 +4,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
   .List_card_image_wrapper {
     width: 48%;
@@ -17,7 +17,7 @@
   text-decoration: none;
   display: flex;
   flex-direction: row-reverse;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   justify-content: space-between;
 }
 .List_card_image {
@@ -58,10 +58,11 @@
 .List_card_info_name {
   font-size: 18px;
   font-weight: bold;
+
   font-family: "Geologica Bold";
 }
 
 .List_card_info_short_description {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Geologica Thin";
 }
