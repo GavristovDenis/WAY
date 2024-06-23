@@ -22,22 +22,51 @@
   .Sidebar_button_place {
     background-color: #f3bd51;
     color: #426aff;
+    border: 1px solid #f3bd51;
+  }
+  .Sidebar_button_place:hover {
+    background-color: #426aff;
+    color: #f3bd51;
+    border: 1px solid #f3bd51;
   }
   .Sidebar_button_city {
     background-color: #eb6666;
     color: #ffffff;
+    border: 1px solid #eb6666;
+  }
+  .Sidebar_button_city:hover {
+    background-color: #ffffff;
+    color: #eb6666;
+    border: 1px solid #ffffff;
   }
   .Sidebar_button_poster {
     background-color: #ffffff;
     color: #eb6666;
+    border: 1px solid #ffffff;
+  }
+  .Sidebar_button_poster:hover {
+    background-color: #eb6666;
+    color: #ffffff;
+    border: 1px solid #eb6666;
   }
   .Sidebar_button_help {
     background-color: #6e91e0;
     color: #ffffff;
+    border: 1px solid #6e91e0;
+  }
+  .Sidebar_button_help:hover {
+    background-color: #ffffff;
+    color: #6e91e0;
+    border: 1px solid #ffffff;
   }
   .Sidebar_button_about {
     background-color: #426aff;
     color: #fff;
+    border: 1px solid #fff;
+  }
+  .Sidebar_button_about:hover {
+    background-color: #ffffff;
+    color: #426aff;
     border: 1px solid #fff;
   }
 }
