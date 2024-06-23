@@ -2,7 +2,6 @@ import "./Header.scss";
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { TopInfo } from "../components/TopInfo";
-import { Avatar } from "../svg/Avatar";
 import { SidebarIcon } from "../svg/SidebarIcon";
 import { BackArrow } from "../svg/BackArrow";
 export const Header = () => {
@@ -36,12 +35,7 @@ export const Header = () => {
         </Link>
 
         <div>{title}</div>
-        {location.pathname.includes("sidebar") ||
-        location.pathname.includes("%") ? (
-          <BackArrow onClick={goBack} />
-        ) : (
-          <Avatar />
-        )}
+        <BackArrow onClick={goBack} />
       </div>
       {location.pathname === "/places" || location.pathname === "/events" ? (
         <TopInfo />
