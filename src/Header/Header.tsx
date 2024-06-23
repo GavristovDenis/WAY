@@ -8,7 +8,7 @@ export const Header = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
-
+  console.log("sssssssssssssssssssssssssssssssssssssssssss", location.pathname);
   const goBack = () => {
     navigate(-1);
   };
@@ -35,7 +35,11 @@ export const Header = () => {
         </Link>
 
         <div>{title}</div>
-        {location.pathname !== "/" ? <BackArrow onClick={goBack} /> : <div />}
+        {location.pathname !== "/city_select" ? (
+          <BackArrow onClick={goBack} />
+        ) : (
+          <div />
+        )}
       </div>
       {location.pathname === "/places" || location.pathname === "/events" ? (
         <TopInfo />
