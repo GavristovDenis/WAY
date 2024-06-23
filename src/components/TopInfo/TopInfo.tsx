@@ -1,6 +1,5 @@
 import "./TopInfo.scss";
 import { useLocation } from "react-router-dom";
-import { StarIcon } from "../../svg/Star";
 import { useCityStore } from "../../store";
 const TopInfo = () => {
   const location = useLocation();
@@ -10,9 +9,7 @@ const TopInfo = () => {
       {location.pathname === "/places" || location.pathname === "/events" ? (
         <>
           <div className="Top_info_text">{selectedCity.toUpperCase()}</div>
-          <div className="Top_info_star">
-            <StarIcon />
-          </div>
+          <div className="Top_info_star"></div>
         </>
       ) : null}
     </div>
