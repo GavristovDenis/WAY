@@ -34,7 +34,9 @@ function App() {
   return (
     <Suspense fallback="loading">
       <div>
-        {location.pathname === "/city_select" ? null : <Header />}
+        {location.pathname === "/city_select" && selectedCity ? null : (
+          <Header />
+        )}
 
         <Routes>
           <Route path="/" element={<LoadingPage />} />
