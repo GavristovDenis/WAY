@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 export const Events = () => {
   const [search, setSearch] = useState("");
-  const [data, setDate] = useState(eventsData);
+  const [data, setDate] = useState(eventsData.filter((id) => id === ));
 
   useEffect(() => {
     const timer = setTimeout(() => {

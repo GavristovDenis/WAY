@@ -18,6 +18,7 @@ export const placesData: ListData[] = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 1,
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const placesData: ListData[] = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 1,
   },
 
   {
@@ -52,6 +54,7 @@ export const placesData: ListData[] = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 2,
   },
 ];
 
@@ -72,6 +75,7 @@ export const eventsData = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 2,
   },
   {
     id: 2,
@@ -88,6 +92,7 @@ export const eventsData = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 2,
   },
   {
     id: 3,
@@ -104,15 +109,18 @@ export const eventsData = [
     author: "Марии Дубцовой",
     date: "24 апреля, 2024",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
+    city: 1,
   },
 ];
 
 export const cities = [
   {
+    id: 1,
     name: "Москва",
     image: require("../img/moscow.png"),
   },
   {
+    id: 2,
     name: "Санкт-Петербург",
     image: require("../img/spb.jpg"),
   },

@@ -7,12 +7,10 @@ export interface Itinerary {
 }
 
 export interface CityType {
-  id: number;
+  id: string;
   city: string;
   img: string;
   description: string;
-  progress: number;
-  itinerary: Itinerary[];
 }
 
 export interface ListData {
@@ -27,6 +25,7 @@ export interface ListData {
   author: string;
   date: string;
   mapLink: string;
+  city: number;
 }
 
 export interface City {

@@ -17,19 +17,29 @@ function App() {
   const setSelectedCity = useCityStore((state) => state.setSelectedCity);
   const isSelected = useCityStore((state) => state.isSelected);
   const setIsSelected = useCityStore((state) => state.setIsSelected);
+  const selectedCityId = useCityStore((state) => state.selectedCityId);
+  const setSelectedCityId = useCityStore((state) => state.setSelectedCityId);
 
   useEffect(() => {
     const selectedCityLocalStorage = localStorage.getItem("selectedCity");
     const isSelectedLocalStorage = localStorage.getItem("isSelected");
-    if (selectedCityLocalStorage !== null && isSelectedLocalStorage !== null) {
+    const selectedCityIdLocalStorage = localStorage.getItem("selectedCityId");
+
+    if (
+      selectedCityLocalStorage !== null &&
+      isSelectedLocalStorage !== null &&
+      selectedCityIdLocalStorage !== null
+    ) {
       setSelectedCity(JSON.parse(selectedCityLocalStorage));
       setIsSelected(JSON.parse(isSelectedLocalStorage));
+      setSelectedCityId(JSON.parse(selectedCityIdLocalStorage));
     }
-  }, [setIsSelected, setSelectedCity]);
+  }, [setIsSelected, setSelectedCity, setSelectedCityId]);
   useEffect(() => {
     localStorage.setItem("selectedCity", JSON.stringify(selectedCity));
+    localStorage.setItem("selectedCityId", JSON.stringify(selectedCityId));
     localStorage.setItem("isSelected", JSON.stringify(isSelected));
-  }, [isSelected, selectedCity]);
+  }, [isSelected, selectedCity, selectedCityId]);
 
   return (
     <Suspense fallback="loading">
