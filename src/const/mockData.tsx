@@ -17,7 +17,7 @@ export const placesData: ListData[] = [
     ],
     author: "Марии Дубцовой",
     date: "17 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=43070086151&l=map",
     city: 1,
   },
   {
@@ -37,7 +37,7 @@ export const placesData: ListData[] = [
     ],
     author: "от редакции",
     date: "12 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=216491468916&l=map",
     city: 1,
   },
   {
@@ -57,7 +57,7 @@ export const placesData: ListData[] = [
     ],
     author: "от редакции",
     date: "10 дней ",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1732662883&l=map",
     city: 1,
   },
   {
@@ -77,7 +77,7 @@ export const placesData: ListData[] = [
     ],
     author: "от Евгения Артёмова",
     date: "5 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=65934341597&l=map",
     city: 1,
   },
   {
