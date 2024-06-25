@@ -8,7 +8,7 @@ export const Help = () => {
         <div>
           <a href="https://t.me/tsar_anpo" target="_blank" rel="noreferrer">
             <svg
-              style={{ border: "1px solid white" }}
+              style={{ border: "1px solid white", borderRadius: "24px" }}
               width="100"
               height="100"
               viewBox="0 0 100 100"
@@ -48,7 +48,7 @@ export const Help = () => {
             rel="noreferrer"
           >
             <svg
-              style={{ border: "1px solid white" }}
+              style={{ border: "1px solid white", borderRadius: "24px" }}
               width="101"
               height="100"
               viewBox="0 0 101 100"
