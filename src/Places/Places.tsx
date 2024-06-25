@@ -17,7 +17,7 @@ export const Places = () => {
     setDateCity(
       placesData.filter((city) => city.city.toString() === selectedCityId)
     );
-  }, []);
+  }, [selectedCityId]);
   useEffect(() => {
     const timer = setTimeout(() => {
       if (!search) {
