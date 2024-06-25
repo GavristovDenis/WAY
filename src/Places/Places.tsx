@@ -5,18 +5,17 @@ import { Link } from "react-router-dom";
 import { Input } from "../components/Input";
 import { ListCard } from "../components/ListCard";
 import { useEffect, useState } from "react";
+import { useCityStore } from "../store";
 
 export const Places = () => {
   const [search, setSearch] = useState("");
   const [data, setDate] = useState(placesData);
   const [dataCity, setDateCity] = useState([] as ListData[]);
+  const selectedCityId = useCityStore((state) => state.selectedCityId);
+
   useEffect(() => {
     setDateCity(
-      placesData.filter(
-        (city) =>
-          city.city.toString() ===
-          localStorage.getItem("selectedCityId")?.toString()
-      )
+      placesData.filter((city) => city.city.toString() === selectedCityId)
     );
   }, []);
   useEffect(() => {

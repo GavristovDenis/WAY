@@ -289,13 +289,13 @@ export const eventsData = [
 
 export const cities = [
   {
-    id: 2,
-    name: "Санкт-Петербург",
-    image: require("../img/spb.jpg"),
-  },
-  {
     id: 1,
     name: "Москва",
     image: require("../img/moscow.png"),
+  },
+  {
+    id: 2,
+    name: "Санкт-Петербург",
+    image: require("../img/spb.jpg"),
   },
 ];
