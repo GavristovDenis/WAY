@@ -26,6 +26,8 @@
     margin-bottom: 12px;
   }
   .List_card_image {
+    object-fit: cover;
+
     height: 184px;
     width: 184px;
     border-radius: 12px 0 0 12px;
@@ -43,6 +45,8 @@
     justify-content: flex-end;
   }
   .List_card_image {
+    object-fit: cover;
+
     height: 184px;
     width: 184px;
     border-radius: 0 12px 12px 0;
