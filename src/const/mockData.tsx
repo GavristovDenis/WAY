@@ -148,6 +148,66 @@ export const placesData: ListData[] = [
     mapLink: "yandexmaps://maps.yandex.ru/?oid=117588517323&l=map",
     city: 2,
   },
+  {
+    id: 9,
+    whenPublished: "10 дней назад",
+    name: "Форт",
+    shortDescription: "Арт-галерея",
+    description:
+      "Арт-галерея «Форт» позиционируется как творческое пространство, которое служит искусству в любом его проявлении. Там можно получить общее представление о современном художественном процессе: художники и дизайнеры не просто показывают в мастерских свои произведения, но и рады поделиться с посетителями секретами и тонкостями закулисного процесса на мастер-классах, семинарах, лекциях и встречах. Вы станете немного ближе к искусству, узнав о том, как появляются и воплощаются креативные идеи и замыслы. <br>А если вы хотите создавать своими руками оригинальные вещи, которые потом будете носить, загляните на специальные мастер-классы. Там можно разрисовать футболку, расписать брошку или научиться живописи и графики, даже если в последний раз вы держали в руках кисть или карандаш в школе на уроках рисования.",
+    previewImage: require("../img/1p.png"),
+    isAdded: false,
+    sliderImages: [{ image: require("../img/1p.png") }],
+    author: "от редакции",
+    date: "10 дней назад",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=196717242181&l=map",
+    city: 3,
+  },
+  {
+    id: 10,
+    whenPublished: "сегодня",
+    name: "Flacon 1170",
+    shortDescription: "Арт-Кластер ",
+    description:
+      "Дизайн-завод Flacon, созданный в Москве, в 2016-м обзавёлся горной резиденцией на «Роза Хутор». Творческий кластер в этом зимнем сезоне представляет Петербургский театр Vertumn и ежедневные театральные вечера. Творческие мастер-классы и кино под открытым небом.",
+    previewImage: require("../img/2p.png"),
+    isAdded: false,
+    sliderImages: [{ image: require("../img/2p.png") }],
+    author: "от редакции",
+    date: "сегодня",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=90077411927&l=map",
+    city: 3,
+  },
+  {
+    id: 11,
+    whenPublished: "12 дней назад",
+    name: "Sochi Art Space",
+    shortDescription: "Арт-пространство",
+    description:
+      "Локация — производственная база «Авангарда» на улице Пластунской, из которой уже несколько месяцев активно выгребают весь ненужный хлам. Павел Лесневский и Анна Сухорукова позиционируют Sochi Art Space как коворкинг для молодых архитекторов, дизайнеров и визуализаторов. Будущим резидентам будет предложен безлимитный интернет, принтеры и переговорная. Почти как традиционный офис, но куда комфортнее. Лаундж тоже обеспечен — на территории обещают поставить свой мини-бар с кофе, смузи и крафтом в свободном доступе. <br>Планируется и площадка для проведения лекций, семинаров, мастер-классов, а также локальный мини-хостел.",
+    previewImage: require("../img/3p.png"),
+    isAdded: false,
+    sliderImages: [{ image: require("../img/3p.png") }],
+    author: "от редакции",
+    date: "12 дней назад",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=57044472408&l=map",
+    city: 3,
+  },
+  {
+    id: 12,
+    whenPublished: "вчера",
+    name: "Panama",
+    shortDescription: "Арт-пространство ",
+    description:
+      "В здании, в советские годы занимаемом легендарным рестораном «Каскад», расположилось креативное пространство «Панама» — отличный опенспейс, зонированный жёлтыми нитями. На данный момент здесь базируются: студия керамики Ananas, бьюти-студия Unika, магазин отечественных брендов «Родина», шоурум Confetti, прокат платьев Dress Of Coursе, книжный магазин «ДоброЛавка» и, конечно же, кофе-зал «Луч» — проект бартендеров, известных также по бару «Художественный», разместившемуся по соседству. <br>Своей главной целью ребята из «Панамы» ставят создание подобающих условий для развития творческого потенциала креативного кластера Сочи, что подтверждается многочисленными и крайне разнообразными мероприятиями в афише. Руководствуясь своими благородными мотивами, кураторы «Панамы» даже принялись за обустройство второго этажа — в планах заявлены просторный коворкинг, фудкорт и мастерские для отдельных проектов.",
+    previewImage: require("../img/4p.png"),
+    isAdded: false,
+    sliderImages: [{ image: require("../img/4p.png") }],
+    author: "от редакции",
+    date: "вчера",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=142732113306&l=map",
+    city: 3,
+  },
 ];
 
 export const eventsData = [
@@ -167,7 +227,7 @@ export const eventsData = [
     ],
     author: "от редакции",
     date: "с 16 по 22 февраля",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1089774804&l=map",
     city: 1,
   },
 
@@ -187,7 +247,7 @@ export const eventsData = [
     ],
     author: "от Евгения Попова",
     date: "30 марта — 2 апреля",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1089774804&l=map",
     city: 1,
   },
 
@@ -203,7 +263,7 @@ export const eventsData = [
     sliderImages: [{ image: require("../img/mos-e-ps-3.png") }],
     author: "Т-Банк",
     date: "осень 2025 года",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1089774804&l=map",
     city: 1,
   },
   {
@@ -222,7 +282,7 @@ export const eventsData = [
     ],
     author: "от редакции",
     date: "весна 2025 года",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1089774804&l=map",
     city: 1,
   },
   {
@@ -237,7 +297,7 @@ export const eventsData = [
     sliderImages: [{ image: require("../img/spb-e-1.png") }],
     author: "от редакции",
     date: "С 23 марта по 2 апреля",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=239540009932&l=map",
     city: 2,
   },
   {
@@ -252,7 +312,7 @@ export const eventsData = [
     sliderImages: [{ image: require("../img/spb-e-2.png") }],
     author: "от редакции",
     date: "27 июня",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=239540009932&l=map",
     city: 2,
   },
   {
@@ -267,7 +327,7 @@ export const eventsData = [
     sliderImages: [{ image: require("../img/spb-e-3.png") }],
     author: "от редакции",
     date: "16 - 19 мая",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=239540009932&l=map",
     city: 2,
   },
   {
@@ -282,7 +342,7 @@ export const eventsData = [
     sliderImages: [{ image: require("../img/spb-e-4.png") }],
     author: "от редакции",
     date: "28 июня по 1 июля",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=239540009932&l=map",
     city: 2,
   },
 ];
@@ -297,5 +357,10 @@ export const cities = [
     id: 2,
     name: "Санкт-Петербург",
     image: require("../img/spb.jpg"),
+  },
+  {
+    id: 3,
+    name: "Сочи",
+    image: require("../img/sochi.jpg"),
   },
 ];
