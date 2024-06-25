@@ -96,7 +96,7 @@ export const placesData: ListData[] = [
     ],
     author: "от Антонины Стрельцовой",
     date: "30 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=105313507204&l=map",
     city: 2,
   },
   {
@@ -115,7 +115,7 @@ export const placesData: ListData[] = [
     ],
     author: "от редакции",
     date: "12 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=1392791096&l=map",
     city: 2,
   },
   {
@@ -130,7 +130,7 @@ export const placesData: ListData[] = [
     sliderImages: [{ image: require("../img/spb-s-31.png") }],
     author: "Новая Голландия",
     date: "12 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=196717242181&l=map",
     city: 2,
   },
   {
@@ -145,7 +145,7 @@ export const placesData: ListData[] = [
     sliderImages: [{ image: require("../img/spb-s-4.png") }],
     author: "от Марии Александровой",
     date: "17 дней назад",
-    mapLink: "ЭТО Я САМ",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=117588517323&l=map",
     city: 2,
   },
 ];
