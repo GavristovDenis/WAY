@@ -11,7 +11,7 @@ export const Events = () => {
   const [data, setDate] = useState([] as ListData[]);
   const [dataCity, setDateCity] = useState([] as ListData[]);
   useEffect(() => {
-    setDateCity(eventsData.filter((city) => city.city.toString() == "1"));
+    setDateCity(eventsData.filter((city) => city.city.toString() === "1"));
   }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
