@@ -90,11 +90,12 @@ export const eventsData = [
     shortDescription: "выставка киноиндустрии",
     description:
       "Четырехдневное мероприятие для 600 международных продюсеров, торговых агентов, дистрибьюторов, а также представителей вещания и финансирования, которые активно участвуют в международных совместных постановках. Основные тематические направления: Развлечения, Бизнес-партнерство, Кино, Создание и ведение бизнеса, Бизнес, Бюджетирование . Полный список участников European Film Market (EFM) 2023 размещается на официальном сайте выставки и постоянно обновляется. Там же вы сможете найти экспонентов предыдущего года. Деловая программа European Film Market (EFM) 2023 обычно публикуется ближе к началу события.",
-    previewImage: require("../img/preview6.png"),
+    previewImage: require("../img/mos-e-p-1.png"),
     isAdded: false,
     sliderImages: [
-      { image: require("../img/preview2.png") },
-      { image: require("../img/preview3.png") },
+      { image: require("../img/mos-e-s-11.png") },
+      { image: require("../img/mos-e-s-12.png") },
+      { image: require("../img/mos-e-s-13.png") },
     ],
     author: "от редакции",
     date: "с 16 по 22 февраля",
@@ -109,11 +110,12 @@ export const eventsData = [
     shortDescription: "Ярмарка современного искусства",
     description:
       "В 2024 году с 30 марта по 2 апреля в Гостином дворе в Москве, пройдет Ярмарка современного искусства Art Russia. В ярмарке примут участие российские и зарубежные галереи и художники.",
-    previewImage: require("../img/preview6.png"),
+    previewImage: require("../img/mos-e-p-2.png"),
     isAdded: false,
     sliderImages: [
-      { image: require("../img/preview2.png") },
-      { image: require("../img/preview3.png") },
+      { image: require("../img/mos-e-s-21.png") },
+      { image: require("../img/mos-e-s-22.png") },
+      { image: require("../img/mos-e-s-23.png") },
     ],
     author: "от Евгения Попова",
     date: "30 марта — 2 апреля",
@@ -128,12 +130,9 @@ export const eventsData = [
     shortDescription: "Конференция T-Банка",
     description:
       "Конференция Tinkoff о продуктовом дизайне. На ней покажут реальные кейсы и неудачные запуски, расскажут о том, как писать и рисовать для интерфейсов и как проводить исследования разной аудитории. А в конце всех участников ждет афтепати! Стоимость: бесплатно.",
-    previewImage: require("../img/preview6.png"),
+    previewImage: require("../img/mos-e-ps-3.png"),
     isAdded: false,
-    sliderImages: [
-      { image: require("../img/preview2.png") },
-      { image: require("../img/preview3.png") },
-    ],
+    sliderImages: [{ image: require("../img/mos-e-ps-3.png") }],
     author: "Т-Банк",
     date: "осень 2025 года",
     mapLink: "ЭТО Я САМ",
@@ -146,11 +145,12 @@ export const eventsData = [
     shortDescription: "Конференция Союза архитекторов",
     description:
       "Конференция Союза архитекторов и дизайнеров о трендах на год — команда анализирует рынок за последний год и делает прогнозы на следующий. На мероприятии делятся новейшими фишками, которые эффективно отработали у практиков из дизайнерского мира, чтобы каждый зритель мог применить их именно для своего бизнеса. Стоимость: до 15 000 рублей, в зависимости от типа билета.",
-    previewImage: require("../img/preview6.png"),
+    previewImage: require("../img/mos-e-ps-41.png"),
     isAdded: false,
     sliderImages: [
-      { image: require("../img/preview2.png") },
-      { image: require("../img/preview3.png") },
+      { image: require("../img/mos-e-ps-41.png") },
+      { image: require("../img/mos-e-s-42.png") },
+      { image: require("../img/mos-e-s-43.png") },
     ],
     author: "от редакции",
     date: "весна 2025 года",
