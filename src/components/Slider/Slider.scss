@@ -13,7 +13,36 @@
   width: 350px;
   border-radius: 12px;
 }
-
+@media screen and (max-device-width: 366px) {
+  .Slider {
+    background-color: white;
+    z-index: 0;
+    width: 320px;
+    height: 320px;
+  }
+  .Slider_image {
+    background-color: white;
+    object-fit: cover;
+    height: 320px;
+    width: 320px;
+    border-radius: 12px;
+  }
+}
+@media screen and (max-device-width: 346px) {
+  .Slider {
+    background-color: white;
+    z-index: 0;
+    width: 310px;
+    height: 310px;
+  }
+  .Slider_image {
+    background-color: white;
+    object-fit: cover;
+    height: 310px;
+    width: 310px;
+    border-radius: 12px;
+  }
+}
 :where(.css-dev-only-do-not-override-zg0ahe).ant-carousel .slick-dots-bottom {
   z-index: 0;
 }
