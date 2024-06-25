@@ -7,8 +7,9 @@ import { useCityStore } from "../../store";
 
 interface SliderProps {
   array: City[];
+  isMain: boolean;
 }
-const Slider: FC<SliderProps> = ({ array }) => {
+const Slider: FC<SliderProps> = ({ array, isMain }) => {
   const selectedCity = useCityStore((state) => state.selectedCity);
   const setSelectedCity = useCityStore((state) => state.setSelectedCity);
   const setSelectedCityId = useCityStore((state) => state.setSelectedCityId);
@@ -33,7 +34,7 @@ const Slider: FC<SliderProps> = ({ array }) => {
     }
   };
   return (
-    <Carousel {...settings} className="Slider">
+    <Carousel {...settings} className={isMain ? "Slider" : "SliderCity"}>
       {array.map((item, index) => {
         return (
           <>

@@ -353,7 +353,7 @@ export const CitySelect = () => {
           search={search}
           setSearch={setSearch}
         />
-        <Slider array={cities} />
+        <Slider array={cities} isMain={true} />
       </div>
     </div>
   );

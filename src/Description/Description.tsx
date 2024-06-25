@@ -24,7 +24,7 @@ export const CityItem: FC = () => {
     <div className="Description_wrapper">
       <div className="Description_container">
         <div className="Description_slider_container">
-          <Slider array={item.sliderImages} />
+          <Slider isMain={false} array={item.sliderImages} />
         </div>
         <div className="Author_and_when">
           <div>от {item.author}</div>·<div>{item.date}</div>
