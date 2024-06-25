@@ -9,19 +9,22 @@ import { useEffect, useState } from "react";
 export const Places = () => {
   const [search, setSearch] = useState("");
   const [data, setDate] = useState(placesData);
-
+  const [dataCity, setDateCity] = useState([] as ListData[]);
+  useEffect(() => {
+    setDateCity(placesData.filter((city) => city.city.toString() == "1"));
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       if (!search) {
-        setDate(placesData);
+        setDate(dataCity);
       }
-      const result = placesData.filter((title) =>
+      const result = dataCity.filter((title) =>
         title.name.toLowerCase().includes(search.toLowerCase())
       );
       setDate(result);
     }, 300);
     return () => clearTimeout(timer);
-  }, [search]);
+  }, [dataCity, search]);
 
   return (
     <div className="Places_wrapper">

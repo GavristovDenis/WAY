@@ -11,6 +11,8 @@ interface SliderProps {
 const Slider: FC<SliderProps> = ({ array }) => {
   const selectedCity = useCityStore((state) => state.selectedCity);
   const setSelectedCity = useCityStore((state) => state.setSelectedCity);
+  const setSelectedCityId = useCityStore((state) => state.setSelectedCityId);
+
   const location = useLocation();
   const navigate = useNavigate();
   const settings = {
@@ -21,10 +23,11 @@ const Slider: FC<SliderProps> = ({ array }) => {
     slidesToScroll: 1,
     swipe: true,
   };
-  const citySelect = (city: string) => {
+  const citySelect = (city: string, id?: string) => {
     if (location.pathname === "/city_select") {
       navigate("/places");
       setSelectedCity(city);
+      setSelectedCityId(id ? id : "");
     } else {
       return;
     }
@@ -39,7 +42,9 @@ const Slider: FC<SliderProps> = ({ array }) => {
               src={item.image}
               key={index}
               alt="Изображение не найдено"
-              onClick={() => (item.name ? citySelect(item.name) : null)}
+              onClick={() =>
+                item.name ? citySelect(item.name, item.id?.toString()) : null
+              }
             />
             <div
               className={

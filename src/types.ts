@@ -31,4 +31,5 @@ export interface ListData {
 export interface City {
   image: string;
   name?: string;
+  id?: string | number;
 }

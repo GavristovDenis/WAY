@@ -8,20 +8,23 @@ import { useEffect, useState } from "react";
 
 export const Events = () => {
   const [search, setSearch] = useState("");
-  const [data, setDate] = useState(eventsData.filter((id) => id === ));
-
+  const [data, setDate] = useState([] as ListData[]);
+  const [dataCity, setDateCity] = useState([] as ListData[]);
+  useEffect(() => {
+    setDateCity(eventsData.filter((city) => city.city.toString() == "1"));
+  }, []);
   useEffect(() => {
     const timer = setTimeout(() => {
       if (!search) {
-        setDate(eventsData);
+        setDate(dataCity);
       }
-      const result = eventsData.filter((title) =>
+      const result = dataCity.filter((title) =>
         title.name.toLowerCase().includes(search.toLowerCase())
       );
       setDate(result);
     }, 300);
     return () => clearTimeout(timer);
-  }, [search]);
+  }, [dataCity, search]);
 
   return (
     <div className="Places_wrapper">

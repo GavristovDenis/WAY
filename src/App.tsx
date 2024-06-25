@@ -30,9 +30,9 @@ function App() {
       isSelectedLocalStorage !== null &&
       selectedCityIdLocalStorage !== null
     ) {
-      setSelectedCity(JSON.parse(selectedCityLocalStorage));
-      setIsSelected(JSON.parse(isSelectedLocalStorage));
-      setSelectedCityId(JSON.parse(selectedCityIdLocalStorage));
+      setSelectedCity(selectedCityLocalStorage);
+      setIsSelected(!isSelectedLocalStorage);
+      setSelectedCityId(selectedCityIdLocalStorage);
     }
   }, [setIsSelected, setSelectedCity, setSelectedCityId]);
   useEffect(() => {
