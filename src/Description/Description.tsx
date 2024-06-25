@@ -31,7 +31,10 @@ export const CityItem: FC = () => {
         </div>
         <div className="Description_name">{item.name}</div>
 
-        <p dangerouslySetInnerHTML={{ __html: item.description }} />
+        <p
+          className="Description_description"
+          dangerouslySetInnerHTML={{ __html: item.description }}
+        />
       </div>
       <div className="Descritpion_button_container">
         <button className="Description_button">
