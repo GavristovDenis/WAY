@@ -14,7 +14,8 @@ export const Events = () => {
     setDateCity(
       eventsData.filter(
         (city) =>
-          city.city.toString() === localStorage.getItem("selectedCityId")
+          city.city.toString() ===
+          localStorage.getItem("selectedCityId")?.toString()
       )
     );
   }, []);

@@ -14,7 +14,8 @@ export const Places = () => {
     setDateCity(
       placesData.filter(
         (city) =>
-          city.city.toString() === localStorage.getItem("selectedCityId")
+          city.city.toString() ===
+          localStorage.getItem("selectedCityId")?.toString()
       )
     );
   }, []);
