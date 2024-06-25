@@ -17,6 +17,11 @@
 .Description_container > * {
   margin: 15px;
 }
+@media screen and (max-device-width: 366px) {
+  .Description_container > * {
+    margin: 25px 15px 15px 15px;
+  }
+}
 .Description_slider_container {
   display: flex;
   justify-content: center;
