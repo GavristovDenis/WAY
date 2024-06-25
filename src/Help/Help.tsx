@@ -6,7 +6,11 @@ export const Help = () => {
     <div className="Help_wrapper">
       <div className="Help_element">
         <div>
-          <a href="https://t.me/tsar_anpo" target="_blank" rel="noreferrer">
+          <a
+            href="https://t.me/+J6-Zk3DeQsNhNGVi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <svg
               style={{ border: "1px solid white", borderRadius: "24px" }}
               width="100"
