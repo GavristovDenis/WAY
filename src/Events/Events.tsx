@@ -49,6 +49,7 @@ export const Events = () => {
               key={item.id}
             >
               <ListCard
+                date={item.date}
                 id={id}
                 published={item.whenPublished}
                 name={item.name}

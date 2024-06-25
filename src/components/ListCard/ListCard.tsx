@@ -7,9 +7,10 @@ interface ListCardProps {
   previewImage: string;
   isAdded: boolean;
   id: number;
+  date?: string;
 }
 const ListCard: FC<ListCardProps> = memo(
-  ({ published, name, shortDescription, previewImage, isAdded, id }) => {
+  ({ name, shortDescription, previewImage, date, id }) => {
     return (
       <div
         className={
@@ -22,6 +23,7 @@ const ListCard: FC<ListCardProps> = memo(
             <div className="List_card_info_short_description">
               {shortDescription}
             </div>
+            <div className="List_card_info_short_description">{date}</div>
           </div>
         </div>
         <div className="List_card_image_wrapper">
