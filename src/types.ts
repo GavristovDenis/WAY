@@ -14,6 +14,7 @@ export interface CityType {
 }
 
 export interface ListData {
+  link: string;
   id: number;
   description: string;
   name: string;

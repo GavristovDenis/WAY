@@ -18,10 +18,13 @@ export const placesData: ListData[] = [
     author: "Марии Дубцовой",
     date: "17 дней назад",
     mapLink: "yandexmaps://maps.yandex.ru/?oid=43070086151&l=map",
+    link: "https://www.redok.ru",
     city: 1,
   },
   {
     id: 2,
+    link: "https://ges-2.org",
+
     whenPublished: "12 дней назад",
     name: "ГЭС-2",
     shortDescription:
@@ -42,6 +45,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 3,
+    link: "https://flacon.ru",
     whenPublished: "10 дней назад",
     name: "FLACON",
     shortDescription:
@@ -62,6 +66,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 4,
+    link: "https://trekhgorka.ru",
     whenPublished: "5 дней назад",
     name: "Трёхгорная Мануфактура",
     shortDescription:
@@ -82,6 +87,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 5,
+    link: "https://sevcableport.ru/ru",
     whenPublished: "30 дней назад",
     name: "Севкабель-порт",
     shortDescription: "Культурно-деловое пространство",
@@ -101,6 +107,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 6,
+    link: "https://bs-realty.ru",
     whenPublished: "12 дней назад",
     name: "Флигель",
     shortDescription: "Развлекательный кластер",
@@ -120,6 +127,8 @@ export const placesData: ListData[] = [
   },
   {
     id: 7,
+    link: "https://www.newhollandsp.ru/buildings/bottle/",
+
     whenPublished: "8 дней назад",
     name: "Бутылка",
     shortDescription: "От тюрьмы к культурному центру",
@@ -135,6 +144,8 @@ export const placesData: ListData[] = [
   },
   {
     id: 8,
+    link: " https://artplay.ru/about",
+
     whenPublished: "17 дней назад",
     name: "Artplay",
     shortDescription: "филиал московского центра дизайна",
@@ -150,6 +161,8 @@ export const placesData: ListData[] = [
   },
   {
     id: 9,
+    link: "https://vk.com/artgalleryfort",
+
     whenPublished: "10 дней назад",
     name: "Форт",
     shortDescription: "Арт-галерея",
@@ -165,6 +178,8 @@ export const placesData: ListData[] = [
   },
   {
     id: 10,
+    link: "https://www.flacon1170.com/contacts",
+
     whenPublished: "сегодня",
     name: "Flacon 1170",
     shortDescription: "Арт-Кластер ",
@@ -180,6 +195,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 11,
+    link: "https://www.instagram.com/sochiartspace/",
     whenPublished: "12 дней назад",
     name: "Sochi Art Space",
     shortDescription: "Арт-пространство",
@@ -195,6 +211,7 @@ export const placesData: ListData[] = [
   },
   {
     id: 12,
+    link: "https://vk.com/panamaspace",
     whenPublished: "вчера",
     name: "Panama",
     shortDescription: "Арт-пространство ",
@@ -212,7 +229,8 @@ export const placesData: ListData[] = [
 
 export const eventsData = [
   {
-    id: 1,
+    link: "https://www.efm-berlinale.de/en/home/homepage.html",
+
     whenPublished: "17 дней назад",
     name: "European Film Market",
     shortDescription: "выставка киноиндустрии",
@@ -233,6 +251,7 @@ export const eventsData = [
 
   {
     id: 2,
+    link: "https://artrussiafair.com",
     whenPublished: "5 дней назад",
     name: "Art Russia fair",
     shortDescription: "Ярмарка современного искусства",
@@ -253,6 +272,7 @@ export const eventsData = [
 
   {
     id: 3,
+    link: "https://ffdd2d.tinkoff.ru",
     whenPublished: "7 дней назад",
     name: "#FFDD2D",
     shortDescription: "Конференция T-Банка",
@@ -268,6 +288,8 @@ export const eventsData = [
   },
   {
     id: 4,
+    link: "https://design-conf.ru",
+
     whenPublished: "6 дней назад",
     name: "Designconf",
     shortDescription: "Конференция Союза архитекторов",
@@ -287,6 +309,8 @@ export const eventsData = [
   },
   {
     id: 5,
+    link: "https://www.museum12345.ru",
+
     whenPublished: "13 дней назад",
     name: "Детские дни",
     shortDescription: "Фестиваль",
@@ -302,6 +326,7 @@ export const eventsData = [
   },
   {
     id: 6,
+    link: "https://petrafest.ru/most",
     whenPublished: "17 дней назад",
     name: "Мост",
     shortDescription: "Фестиваль",
@@ -317,6 +342,8 @@ export const eventsData = [
   },
   {
     id: 7,
+    link: "https://book-salon.online",
+
     whenPublished: "6 дней назад",
     name: "Книжный салон",
     shortDescription: "Книжная выставка",
@@ -332,6 +359,7 @@ export const eventsData = [
   },
   {
     id: 8,
+    link: "https://kastry.art",
     whenPublished: "11 дней назад",
     name: "Кастры Fest",
     shortDescription: "Фестиваль",
@@ -347,6 +375,8 @@ export const eventsData = [
   },
   {
     id: 9,
+    link: "https://art-weekend-2023.timepad.ru/event/2598795/",
+
     whenPublished: "5 дней назад",
     name: "DESIGNS PRO",
     shortDescription: "Фестиваль дизайна",
@@ -362,6 +392,8 @@ export const eventsData = [
   },
   {
     id: 10,
+    link: "https://skypark.ru/about/news/events/skypark-live-2024-otkrytie-sezona/",
+
     whenPublished: "15 дней назад",
     name: "Skypark! Live",
     shortDescription: "Фестиваль",
@@ -377,6 +409,8 @@ export const eventsData = [
   },
   {
     id: 11,
+    link: "https://www.skfo.online/event/зимний-театр-ночь-пожирателей-реклам/",
+
     whenPublished: "6 дней назад",
     name: "Ночь пожирателей рекламы",
     shortDescription: "Фестиваль",
@@ -392,6 +426,8 @@ export const eventsData = [
   },
   {
     id: 12,
+    link: "https://go.rosakhutor.com/gastrofest",
+
     whenPublished: "Сегодня",
     name: "Гастрофест Роза Хутор",
     shortDescription: "Гастрономический фестивать",

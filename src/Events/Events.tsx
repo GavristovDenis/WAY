@@ -10,7 +10,7 @@ import { useCityStore } from "../store";
 export const Events = () => {
   const [search, setSearch] = useState("");
   const [data, setDate] = useState([] as ListData[]);
-  const [dataCity, setDateCity] = useState([] as ListData[]);
+  const [dataCity, setDateCity] = useState([] as any[]);
   const selectedCityId = useCityStore((state) => state.selectedCityId);
   useEffect(() => {
     setDateCity(
