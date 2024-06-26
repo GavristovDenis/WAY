@@ -1,7 +1,6 @@
 .City_select_wrapper {
   background-color: #ffffff;
   height: 100vh;
-  width: fit-content;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -18,4 +17,7 @@
     align-items: center;
     border-radius: 0 0 30px 30px;
   }
+}
+html {
+  background-color: white;
 }
