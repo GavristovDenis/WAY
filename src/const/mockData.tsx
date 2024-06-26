@@ -229,6 +229,7 @@ export const placesData: ListData[] = [
 
 export const eventsData = [
   {
+    id: 1,
     link: "https://www.efm-berlinale.de/en/home/homepage.html",
 
     whenPublished: "17 дней назад",
@@ -266,7 +267,7 @@ export const eventsData = [
     ],
     author: "от Евгения Попова",
     date: "30 марта — 2 апреля",
-    mapLink: "yandexmaps://maps.yandex.ru/?oid=1089774804&l=map",
+    mapLink: "yandexmaps://maps.yandex.ru/?oid=151274975980&l=map",
     city: 1,
   },
 
