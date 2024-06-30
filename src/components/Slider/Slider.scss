@@ -14,34 +14,24 @@
     border-radius: 12px;
   }
 }
-@media screen and (max-device-width: 366px) {
+@media screen and (max-device-width: 374px) {
   .SliderCity {
-    background-color: white;
-    z-index: 0;
     width: 320px;
     height: 320px;
     .Slider_image {
-      background-color: white;
-      object-fit: cover;
       height: 320px;
       width: 320px;
-      border-radius: 12px;
     }
   }
 }
-@media screen and (max-device-width: 366px) {
+@media screen and (max-device-width: 344px) {
   .SliderCity {
-    background-color: white;
-    z-index: 0;
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
   }
   .Slider_image {
-    background-color: white;
-    object-fit: cover;
-    height: 320px;
-    width: 320px;
-    border-radius: 12px;
+    height: 300px;
+    width: 300px;
   }
 }
 .Slider {

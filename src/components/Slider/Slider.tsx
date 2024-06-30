@@ -1,12 +1,12 @@
 import "./Slider.scss";
 import { Carousel } from "antd";
 import { FC } from "react";
-import { City } from "../../types";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCityStore } from "../../store";
+import { CityType } from "../../types";
 
 interface SliderProps {
-  array: City[];
+  array: CityType[];
   isMain: boolean;
 }
 const Slider: FC<SliderProps> = ({ array, isMain }) => {

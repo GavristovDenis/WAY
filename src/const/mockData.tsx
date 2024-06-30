@@ -1,4 +1,4 @@
-import { ListData } from "../types";
+import { CityType, ListData } from "../types";
 
 export const placesData: ListData[] = [
   {
@@ -227,7 +227,7 @@ export const placesData: ListData[] = [
   },
 ];
 
-export const eventsData = [
+export const eventsData: ListData[] = [
   {
     id: 1,
     link: "https://www.efm-berlinale.de/en/home/homepage.html",
@@ -444,7 +444,7 @@ export const eventsData = [
   },
 ];
 
-export const cities = [
+export const cities: CityType[] = [
   {
     id: 1,
     name: "Москва",

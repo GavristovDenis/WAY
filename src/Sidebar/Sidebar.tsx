@@ -21,7 +21,6 @@ export const Sidebar = () => {
         </div>
         <div className="Sidebar_element">
           <div className="Sidebar_button">
-            {" "}
             <Link to={"/about"} className="Sidebar_link">
               <button className="Sidebar_button_about">о нас</button>
             </Link>

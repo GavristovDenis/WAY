@@ -25,12 +25,33 @@
     justify-content: space-around;
     margin-bottom: 12px;
   }
+
   .List_card_image {
     object-fit: cover;
 
     height: 166px;
     width: 166px;
     border-radius: 12px 0 0 12px;
+  }
+  @media screen and (max-device-width: 354px) {
+    .List_card_info {
+      width: 130px;
+      height: 130px;
+    }
+    .List_card_image {
+      height: 156px;
+      width: 156px;
+    }
+  }
+  @media screen and (max-device-width: 334px) {
+    .List_card_info {
+      width: 122px;
+      height: 122px;
+    }
+    .List_card_image {
+      height: 148px;
+      width: 148px;
+    }
   }
 }
 .List_card_wrapper_reverse {
