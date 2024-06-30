@@ -6,13 +6,6 @@ export interface Itinerary {
   progress: number;
 }
 
-export interface CityType {
-  id: string;
-  city: string;
-  img: string;
-  description: string;
-}
-
 export interface ListData {
   link: string;
   id: number;
@@ -22,15 +15,15 @@ export interface ListData {
   shortDescription: string;
   previewImage: any;
   isAdded: boolean;
-  sliderImages: City[];
+  sliderImages: any;
   author: string;
   date: string;
   mapLink: string;
   city: number;
 }
 
-export interface City {
+export interface CityType {
   image: string;
-  name?: string;
-  id?: string | number;
+  name: string;
+  id: string | number;
 }

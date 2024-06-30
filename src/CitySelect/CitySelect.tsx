@@ -1,10 +1,13 @@
 import { Slider } from "../components/Slider";
 import "./CitySelect.scss";
-import { cities } from "../const/mockData";
 import { Input } from "../components/Input";
 import { useState } from "react";
+import { useCityStore } from "../store";
+
 export const CitySelect = () => {
   const [search, setSearch] = useState();
+  const сities = useCityStore((state) => state.сities);
+
   return (
     <div className="City_select_wrapper">
       <div className="logo">
@@ -150,7 +153,7 @@ export const CitySelect = () => {
           search={search}
           setSearch={setSearch}
         />
-        <Slider array={cities} isMain={true} />
+        <Slider array={сities} isMain={true} />
       </div>
     </div>
   );
