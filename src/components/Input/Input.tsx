@@ -28,7 +28,6 @@ const InputWithIcon: FC<InputWithIconProps> = memo(
             left: "10px",
             transform: "translateY(-50%)",
           }}
-          onClick={() => console.log("click")}
         >
           <svg
             width="24"

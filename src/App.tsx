@@ -11,7 +11,7 @@ import { Events } from "./Events/Events";
 import { CitySelect } from "./CitySelect/CitySelect";
 import { useCityStore } from "./store";
 import { About } from "./About/About";
-import { cities } from "./const/mockData";
+import { cities, placesData, eventsData } from "./const/mockData";
 
 function App() {
   const location = useLocation();
@@ -22,9 +22,14 @@ function App() {
   const selectedCityId = useCityStore((state) => state.selectedCityId);
   const setSelectedCityId = useCityStore((state) => state.setSelectedCityId);
   const setCityData = useCityStore((state) => state.setCities);
+  const setPlacesData = useCityStore((state) => state.setPlacesData);
+  const setEventsData = useCityStore((state) => state.setEventsData);
+
   useEffect(() => {
     setCityData(cities);
-  }, [setCityData]);
+    setPlacesData(placesData);
+    setEventsData(eventsData);
+  }, [setCityData, setPlacesData, setEventsData]);
 
   useEffect(() => {
     const selectedCityLocalStorage = localStorage.getItem("selectedCity");

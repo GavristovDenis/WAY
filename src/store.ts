@@ -1,9 +1,13 @@
 import { create } from "zustand";
-import { CityType } from "./types";
+import { CityType, ListData } from "./types";
 
 interface CityState {
   сities: CityType[];
   setCities: (array: CityType[]) => void;
+  placesData: ListData[];
+  setPlacesData: (placesData: ListData[]) => void;
+  eventsData: ListData[];
+  setEventsData: (eventsData: ListData[]) => void;
   selectedCity: string;
   setSelectedCity: (to: string) => void;
   isSelected: boolean;
@@ -15,6 +19,10 @@ interface CityState {
 export const useCityStore = create<CityState>()((set) => ({
   сities: [],
   setCities: (сities) => set({ сities: сities }),
+  placesData: [],
+  setPlacesData: (placesData) => set({ placesData: placesData }),
+  eventsData: [],
+  setEventsData: (eventsData) => set({ eventsData: eventsData }),
   selectedCity: "",
   setSelectedCity: (to) => set({ selectedCity: to }),
   isSelected: false,

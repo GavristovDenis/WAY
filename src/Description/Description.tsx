@@ -1,12 +1,14 @@
 import { FC } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import { eventsData, placesData } from "../const/mockData";
 import "./Description.scss";
 import { Slider } from "../components/Slider";
+import { useCityStore } from "../store";
 
 export const CityItem: FC = () => {
   const { id } = useParams<{ id: string }>();
   const location = useLocation();
+  const placesData = useCityStore((state) => state.placesData);
+  const eventsData = useCityStore((state) => state.eventsData);
 
   if (!id) {
     return <div>No item found</div>;
@@ -19,7 +21,7 @@ export const CityItem: FC = () => {
   if (!item) {
     return <div>Страница не найдена</div>;
   }
-  console.log(item.sliderImages);
+
   return (
     <div className="Description_wrapper">
       <div className="Description_container">
